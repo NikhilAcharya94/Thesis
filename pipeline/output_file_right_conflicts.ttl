@@ -1,0 +1,3139 @@
+@prefix : <http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology .
+
+:Duration a owl:DatatypeProperty ;
+    rdfs:domain :Time ;
+    rdfs:range xsd:string .
+
+:GenreList a owl:DatatypeProperty ;
+    rdfs:domain :Genre ;
+    rdfs:range xsd:string .
+
+:HasAlbum a owl:ObjectProperty ;
+    rdfs:domain :Artist ;
+    rdfs:range :Album ;
+    owl:inverseOf :HasArtist .
+
+:HasAlbumName a owl:DatatypeProperty ;
+    rdfs:domain :Album ;
+    rdfs:range xsd:string .
+
+:HasAmount a owl:DatatypeProperty ;
+    rdfs:domain :Price ;
+    rdfs:range xsd:float .
+
+:HasArtistName a owl:DatatypeProperty ;
+    rdfs:domain :Artist ;
+    rdfs:range xsd:string .
+
+:HasCopyright a owl:DatatypeProperty ;
+    rdfs:domain :Album ;
+    rdfs:range xsd:string .
+
+:HasCurrency a owl:DatatypeProperty ;
+    rdfs:domain :Price ;
+    rdfs:range xsd:string .
+
+:HasGenre a owl:ObjectProperty ;
+    rdfs:domain :Song ;
+    rdfs:range :Genre .
+
+:HasPrice a owl:ObjectProperty ;
+    rdfs:domain :Song ;
+    rdfs:range :Price .
+
+:HasSong a owl:ObjectProperty ;
+    rdfs:domain :Album ;
+    rdfs:range :Song ;
+    owl:inverseOf :IsFrom .
+
+:Minute a owl:DatatypeProperty ;
+    rdfs:domain :Time ;
+    rdfs:range xsd:double .
+
+:Name a owl:DatatypeProperty ;
+    rdfs:domain :Song ;
+    rdfs:range xsd:string .
+
+:PlayTime a owl:ObjectProperty ;
+    rdfs:domain :Song ;
+    rdfs:range :Time .
+
+:ReleasedOn a owl:DatatypeProperty ;
+    rdfs:domain :Song ;
+    rdfs:range xsd:string .
+
+:Sang a owl:ObjectProperty ;
+    rdfs:domain :Artist ;
+    rdfs:range :Song ;
+    owl:inverseOf :SungBy .
+
+:Seconds a owl:DatatypeProperty ;
+    rdfs:domain :Time ;
+    rdfs:range xsd:double .
+
+:104RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:104RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:104RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.3e+01 .
+
+:107RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:107RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:107RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.5e+01 .
+
+:108RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:108RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:108RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.7e+01 .
+
+:110RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:110RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:110RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 4.9e+01 .
+
+:116RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:116RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:116RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 4.7e+01 .
+
+:120RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:120RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:120RTime a :Time ;
+    :Minute 8e+00 ;
+    :Seconds 2e+01 .
+
+:123RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:123RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:123RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 5.9e+01 .
+
+:124RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:124RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:124RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2e+00 .
+
+:130RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:130RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:130RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 7e+00 .
+
+:13RGenre a :Genre ;
+    :GenreList "Alternative Rock"^^xsd:string .
+
+:13RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:13RTime a :Time ;
+    :Minute 0e+00 ;
+    :Seconds 3.2e+01 .
+
+:142RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:142RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:142RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.7e+01 .
+
+:155RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:155RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:155RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 1.2e+01 .
+
+:158RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:158RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:158RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2.8e+01 .
+
+:159RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:159RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:159RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2.9e+01 .
+
+:160RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:160RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:160RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 4.2e+01 .
+
+:165RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:165RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:165RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.1e+01 .
+
+:166RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:166RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:166RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 7e+00 .
+
+:171RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:171RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:171RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.2e+01 .
+
+:172RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:172RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:172RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 1.2e+01 .
+
+:176RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:176RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:176RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.9e+01 .
+
+:17RGenre a :Genre ;
+    :GenreList "Alternative Rock"^^xsd:string .
+
+:17RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:17RTime a :Time ;
+    :Minute 0e+00 ;
+    :Seconds 1.9e+01 .
+
+:180RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:180RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:180RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 1.6e+01 .
+
+:187RGenre a :Genre ;
+    :GenreList "Rock"^^xsd:string .
+
+:187RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:187RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3.8e+01 .
+
+:18RGenre a :Genre ;
+    :GenreList "Alternative Rock"^^xsd:string .
+
+:18RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:18RTime a :Time ;
+    :Minute 0e+00 ;
+    :Seconds 2.7e+01 .
+
+:192RGenre a :Genre ;
+    :GenreList "Rock"^^xsd:string .
+
+:192RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:192RTime a :Time ;
+    :Minute 1e+00 ;
+    :Seconds 2e+00 .
+
+:198RGenre a :Genre ;
+    :GenreList "Rock"^^xsd:string .
+
+:198RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:198RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 2e+00 .
+
+:1RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:1RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:1RTime a :Time ;
+    :Minute 2e+00 ;
+    :Seconds 5.1e+01 .
+
+:207RGenre a :Genre ;
+    :GenreList "Rock"^^xsd:string .
+
+:207RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:207RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 5e+00 .
+
+:213RGenre a :Genre ;
+    :GenreList "Rock"^^xsd:string .
+
+:213RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:213RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3.7e+01 .
+
+:214RGenre a :Genre ;
+    :GenreList "Rock"^^xsd:string .
+
+:214RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:214RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2.2e+01 .
+
+:215RGenre a :Genre ;
+    :GenreList "Country"^^xsd:string .
+
+:215RPrice a :Price ;
+    :HasAmount "0.89"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:215RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.5e+01 .
+
+:219RGenre a :Genre ;
+    :GenreList "Country"^^xsd:string .
+
+:219RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:219RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 4.4e+01 .
+
+:224RGenre a :Genre ;
+    :GenreList " Latin Music"^^xsd:string,
+        "International "^^xsd:string .
+
+:224RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:224RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 4.4e+01 .
+
+:22RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:22RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:22RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2.7e+01 .
+
+:231RGenre a :Genre ;
+    :GenreList " Rock"^^xsd:string,
+        "Folk "^^xsd:string .
+
+:231RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:231RTime a :Time ;
+    :Minute 2e+00 ;
+    :Seconds 2.9e+01 .
+
+:240RGenre a :Genre ;
+    :GenreList " Rock"^^xsd:string,
+        "Folk "^^xsd:string .
+
+:240RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:240RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2.5e+01 .
+
+:244RGenre a :Genre ;
+    :GenreList " Christian"^^xsd:string,
+        "Gospel "^^xsd:string .
+
+:244RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:244RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3.7e+01 .
+
+:251RGenre a :Genre ;
+    :GenreList "Country"^^xsd:string .
+
+:251RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:251RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 4.5e+01 .
+
+:259RGenre a :Genre ;
+    :GenreList " Cowboy"^^xsd:string,
+        " Traditional Country "^^xsd:string,
+        "Country "^^xsd:string .
+
+:259RPrice a :Price ;
+    :HasAmount "0.89"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:259RTime a :Time ;
+    :Minute 2e+00 ;
+    :Seconds 5.5e+01 .
+
+:265RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:265RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:265RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3.3e+01 .
+
+:269RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:269RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:269RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3.1e+01 .
+
+:26RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:26RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:26RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2.7e+01 .
+
+:272RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:272RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:272RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 3.8e+01 .
+
+:276RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:276RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:276RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 1.1e+01 .
+
+:27RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:27RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:27RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5e+00 .
+
+:281RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:281RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:281RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 3.6e+01 .
+
+:284RGenre a :Genre ;
+    :GenreList " Rock"^^xsd:string,
+        "Folk "^^xsd:string .
+
+:284RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:284RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 8e+00 .
+
+:288RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:288RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:288RTime a :Time ;
+    :Minute 2e+00 ;
+    :Seconds 2.5e+01 .
+
+:294RGenre a :Genre ;
+    :GenreList " Dance & Electronic "^^xsd:string,
+        " House"^^xsd:string,
+        "Electronica "^^xsd:string .
+
+:294RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:294RTime a :Time ;
+    :Minute 8e+00 ;
+    :Seconds 2.3e+01 .
+
+:295RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:295RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:295RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 1.7e+01 .
+
+:298RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:298RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:298RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 3.1e+01 .
+
+:299RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:299RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:299RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 3.1e+01 .
+
+:29RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:29RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:29RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 5e+00 .
+
+:300RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:300RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:300RTime a :Time ;
+    :Minute 6e+00 ;
+    :Seconds 4e+00 .
+
+:303RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:303RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:303RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3.8e+01 .
+
+:307RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:307RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:307RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 2.1e+01 .
+
+:317RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:317RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:317RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 2.9e+01 .
+
+:330RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:330RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:330RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 6e+00 .
+
+:335RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:335RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:335RTime a :Time ;
+    :Minute 2e+00 ;
+    :Seconds 3.2e+01 .
+
+:342RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:342RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:342RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 1.6e+01 .
+
+:344RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:344RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:344RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 1.9e+01 .
+
+:346RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:346RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:346RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 1.9e+01 .
+
+:34RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:34RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:34RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2.9e+01 .
+
+:353RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:353RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:353RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 4.9e+01 .
+
+:358RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:358RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:358RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 5.2e+01 .
+
+:360RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:360RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:360RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 3.1e+01 .
+
+:367RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:367RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:367RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 3.2e+01 .
+
+:369RGenre a :Genre ;
+    :GenreList " House"^^xsd:string,
+        " Rap & Hip-Hop "^^xsd:string,
+        "Dance & Electronic "^^xsd:string .
+
+:369RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:369RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.2e+01 .
+
+:374RGenre a :Genre ;
+    :GenreList " House"^^xsd:string,
+        "Dance & Electronic "^^xsd:string .
+
+:374RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:374RTime a :Time ;
+    :Minute 6e+00 ;
+    :Seconds 6e+00 .
+
+:376RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:376RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:376RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 5.1e+01 .
+
+:378RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:378RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:378RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.7e+01 .
+
+:392RGenre a :Genre ;
+    :GenreList "Country"^^xsd:string .
+
+:392RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:392RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 1.5e+01 .
+
+:395RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:395RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:395RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 1.4e+01 .
+
+:40RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:40RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:40RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.7e+01 .
+
+:416RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:416RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:416RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3e+01 .
+
+:419RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:419RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:419RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 2.2e+01 .
+
+:429RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:429RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:429RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2.6e+01 .
+
+:430RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:430RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:430RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3.4e+01 .
+
+:435RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:435RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:435RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 1.8e+01 .
+
+:439RGenre a :Genre ;
+    :GenreList "Country"^^xsd:string .
+
+:439RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:439RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 4.9e+01 .
+
+:43RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:43RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:43RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 4.8e+01 .
+
+:445RGenre a :Genre ;
+    :GenreList " House"^^xsd:string,
+        "Dance & Electronic "^^xsd:string .
+
+:445RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:445RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 2.3e+01 .
+
+:447RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:447RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:447RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3.1e+01 .
+
+:449RGenre a :Genre ;
+    :GenreList " House"^^xsd:string,
+        "Dance & Electronic "^^xsd:string .
+
+:449RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:449RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3.5e+01 .
+
+:452RGenre a :Genre ;
+    :GenreList " Dance & Electronic"^^xsd:string,
+        "Electronica "^^xsd:string .
+
+:452RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:452RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 3.3e+01 .
+
+:455RGenre a :Genre ;
+    :GenreList " Dance & Electronic"^^xsd:string,
+        "Electronica "^^xsd:string .
+
+:455RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:455RTime a :Time ;
+    :Minute 2e+00 ;
+    :Seconds 2.7e+01 .
+
+:456RGenre a :Genre ;
+    :GenreList " Dance & Electronic"^^xsd:string,
+        "Electronica "^^xsd:string .
+
+:456RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:456RTime a :Time ;
+    :Minute 6e+00 ;
+    :Seconds 7e+00 .
+
+:462RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:462RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:462RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 1.2e+01 .
+
+:465RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:465RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:465RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.4e+01 .
+
+:475RGenre a :Genre ;
+    :GenreList "Soundtracks"^^xsd:string .
+
+:475RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:475RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 3.8e+01 .
+
+:478RGenre a :Genre ;
+    :GenreList "Soundtracks"^^xsd:string .
+
+:478RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:478RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 1.6e+01 .
+
+:480RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:480RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:480RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2.6e+01 .
+
+:484RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:484RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:484RTime a :Time ;
+    :Minute 2e+00 ;
+    :Seconds 5.8e+01 .
+
+:48RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:48RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:48RTime a :Time ;
+    :Minute 5e+00 ;
+    :Seconds 1.4e+01 .
+
+:495RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:495RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:495RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.7e+01 .
+
+:504RGenre a :Genre ;
+    :GenreList "Country"^^xsd:string .
+
+:504RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:504RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.6e+01 .
+
+:511RGenre a :Genre ;
+    :GenreList "Country"^^xsd:string .
+
+:511RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:511RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 2e+00 .
+
+:517RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:517RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:517RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 5.6e+01 .
+
+:51RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:51RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:51RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 3.5e+01 .
+
+:522RGenre a :Genre ;
+    :GenreList " Rap & Hip-Hop"^^xsd:string,
+        "Gangsta & Hardcore "^^xsd:string .
+
+:522RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:522RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 3.9e+01 .
+
+:530RGenre a :Genre ;
+    :GenreList "R&B"^^xsd:string .
+
+:530RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:530RTime a :Time ;
+    :Minute 8e+00 ;
+    :Seconds 7e+00 .
+
+:532RGenre a :Genre ;
+    :GenreList "Rap & Hip-Hop"^^xsd:string .
+
+:532RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:532RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 6e+00 .
+
+:535RGenre a :Genre ;
+    :GenreList " West Coast"^^xsd:string,
+        "Rap & Hip-Hop "^^xsd:string .
+
+:535RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:535RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 2.9e+01 .
+
+:54RGenre a :Genre ;
+    :GenreList "Country"^^xsd:string .
+
+:54RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:54RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 1.3e+01 .
+
+:60RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:60RPrice a :Price ;
+    :HasAmount "0.89"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:60RTime a :Time ;
+    :Minute 3e+00 ;
+    :Seconds 1.6e+01 .
+
+:71RGenre a :Genre ;
+    :GenreList " Indie & Lo-Fi"^^xsd:string,
+        "Alternative Rock "^^xsd:string .
+
+:71RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:71RTime a :Time ;
+    :Minute 2e+00 ;
+    :Seconds 2.2e+01 .
+
+:75RGenre a :Genre ;
+    :GenreList "Pop"^^xsd:string .
+
+:75RPrice a :Price ;
+    :HasAmount "0.99"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:75RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 2.4e+01 .
+
+:90RGenre a :Genre ;
+    :GenreList "Dance & Electronic"^^xsd:string .
+
+:90RPrice a :Price ;
+    :HasAmount "1.29"^^xsd:float ;
+    :HasCurrency "$"^^xsd:string .
+
+:90RTime a :Time ;
+    :Minute 4e+00 ;
+    :Seconds 1e+00 .
+
+:HasArtist a owl:ObjectProperty ;
+    rdfs:domain :Album ;
+    rdfs:range :Artist .
+
+:IsFrom a owl:ObjectProperty ;
+    rdfs:domain :Song ;
+    rdfs:range :Album .
+
+:SungBy a owl:ObjectProperty ;
+    rdfs:domain :Song ;
+    rdfs:range :Artist .
+
+:104R a :Song ;
+    :HasGenre :104RGenre ;
+    :HasPrice :104RPrice ;
+    :IsFrom :Listen ;
+    :Name "Bang my Head ( feat . Sia )"^^xsd:string ;
+    :PlayTime :104RTime ;
+    :ReleasedOn "2014-11-24 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:107R a :Song ;
+    :HasGenre :107RGenre ;
+    :HasPrice :107RPrice ;
+    :IsFrom :ListenDeluxe ;
+    :Name "Rise ( feat . Skylar Grey )"^^xsd:string ;
+    :PlayTime :107RTime ;
+    :ReleasedOn "2014-11-24 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:108R a :Song ;
+    :HasGenre :108RGenre ;
+    :HasPrice :108RPrice ;
+    :IsFrom :ListenDeluxe ;
+    :Name "No Money no Love ( feat . Elliphant & Ms. Dynamite )"^^xsd:string ;
+    :PlayTime :108RTime ;
+    :ReleasedOn "2014-11-24 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:110R a :Song ;
+    :HasGenre :110RGenre ;
+    :HasPrice :110RPrice ;
+    :IsFrom :ListenDeluxe ;
+    :Name "Goodbye Friend ( feat . The Script )"^^xsd:string ;
+    :PlayTime :110RTime ;
+    :ReleasedOn "2014-11-24 00:00:00"^^xsd:string ;
+    :SungBy :GuettaDavid .
+
+:116R a :Song ;
+    :HasGenre :116RGenre ;
+    :HasPrice :116RPrice ;
+    :IsFrom :YaoMingfeatWayne2ChainzExplicit ;
+    :Name "Yao Ming ( feat . Wayne & 2 Chainz ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :116RTime ;
+    :ReleasedOn "2011-12-20 00:00:00"^^xsd:string ;
+    :SungBy :DaviBann .
+
+:120R a :Song ;
+    :HasGenre :120RGenre ;
+    :HasPrice :120RPrice ;
+    :IsFrom :WhenLoveTakesOverfeatKellyRowland ;
+    :Name "When Love Takes Over ( Feat . Kelly Rowland - Electro Extended )"^^xsd:string ;
+    :PlayTime :120RTime ;
+    :ReleasedOn "2009-05-05 00:00:00"^^xsd:string ;
+    :SungBy :PierreDavidGuetta .
+
+:123R a :Song ;
+    :HasGenre :123RGenre ;
+    :HasPrice :123RPrice ;
+    :IsFrom :OneLoveDeluxeVersion ;
+    :Name "Missing You ( Feat . Novel ; Continuous Mix Version )"^^xsd:string ;
+    :PlayTime :123RTime ;
+    :ReleasedOn "2009-08-21 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:124R a :Song ;
+    :HasGenre :124RGenre ;
+    :HasPrice :124RPrice ;
+    :IsFrom :WhenLoveTakesOverfeatKellyRowland ;
+    :Name "When Love Takes Over ( feat . Kelly Rowland ) [ Electro Radio Edit ]"^^xsd:string ;
+    :PlayTime :124RTime ;
+    :ReleasedOn "2009-05-05 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:130R a :Song ;
+    :HasGenre :130RGenre ;
+    :HasPrice :130RPrice ;
+    :IsFrom :OneLoveDeluxeVersion ;
+    :Name "Gettin ' Over You ( Feat . Fergie & Lmfao )"^^xsd:string ;
+    :PlayTime :130RTime ;
+    :ReleasedOn "2009-08-21 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:13R a :Song ;
+    :HasGenre :13RGenre ;
+    :HasPrice :13RPrice ;
+    :IsFrom :VHSExplicit ;
+    :Name "Y2K Time Capsule ( Interlude )"^^xsd:string ;
+    :PlayTime :13RTime ;
+    :ReleasedOn "2015-06-30 00:00:00"^^xsd:string ;
+    :SungBy :XAmbassadors .
+
+:142R a :Song ;
+    :HasGenre :142RGenre ;
+    :HasPrice :142RPrice ;
+    :IsFrom :ListenDeluxe ;
+    :Name "No Money no Love ( feat . Elliphant & Ms. Dynamite )"^^xsd:string ;
+    :PlayTime :142RTime ;
+    :ReleasedOn "2014-11-24 00:00:00"^^xsd:string ;
+    :SungBy :GuettaDavid .
+
+:155R a :Song ;
+    :HasGenre :155RGenre ;
+    :HasPrice :155RPrice ;
+    :IsFrom :NothingButtheBeat20Explicit ;
+    :Name "Little Bad Girl ( feat . Taio Cruz & Ludacris ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :155RTime ;
+    :ReleasedOn "2011-08-26 00:00:00"^^xsd:string ;
+    :SungBy :DaviGuet .
+
+:158R a :Song ;
+    :HasGenre :158RGenre ;
+    :HasPrice :158RPrice ;
+    :IsFrom :NothingButtheBeat20Explicit ;
+    :Name "Without You ( feat . Usher )"^^xsd:string ;
+    :PlayTime :158RTime ;
+    :ReleasedOn "2011-08-26 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:159R a :Song ;
+    :HasGenre :159RGenre ;
+    :HasPrice :159RPrice ;
+    :IsFrom :NothingButTheBeat ;
+    :Name "I Can Only Imagine ( Feat . Chris Brown & Lil Wayne )"^^xsd:string ;
+    :PlayTime :159RTime ;
+    :ReleasedOn "2011-08-26 00:00:00"^^xsd:string ;
+    :SungBy :DaviGuet .
+
+:160R a :Song ;
+    :HasGenre :160RGenre ;
+    :HasPrice :160RPrice ;
+    :IsFrom :NothingButTheBeat ;
+    :Name "Night Of Your Life ( Feat . Jennifer Hudson )"^^xsd:string ;
+    :PlayTime :160RTime ;
+    :ReleasedOn "2011-08-26 00:00:00"^^xsd:string ;
+    :SungBy :PierreDavidGuetta .
+
+:165R a :Song ;
+    :HasGenre :165RGenre ;
+    :HasPrice :165RPrice ;
+    :IsFrom :NothingButtheBeat20Explicit ;
+    :Name "In My Head ( feat . Nervo )"^^xsd:string ;
+    :PlayTime :165RTime ;
+    :ReleasedOn "2011-08-26 00:00:00"^^xsd:string ;
+    :SungBy :PierreDavidGuetta .
+
+:166R a :Song ;
+    :HasGenre :166RGenre ;
+    :HasPrice :166RPrice ;
+    :IsFrom :OneLoveDeluxeVersion ;
+    :Name "Gettin ' Over You ( Feat . Fergie & Lmfao )"^^xsd:string ;
+    :PlayTime :166RTime ;
+    :ReleasedOn "2009-08-21 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:171R a :Song ;
+    :HasGenre :171RGenre ;
+    :HasPrice :171RPrice ;
+    :IsFrom :CertifiedEditedVersion ;
+    :Name "Ai n't Got Nothing ( Album Version ( Edited ) ) [ feat . Lil Boosie ] [ Clean ]"^^xsd:string ;
+    :PlayTime :171RTime ;
+    :ReleasedOn "2005-09-20 00:00:00"^^xsd:string ;
+    :SungBy :DavidBanner .
+
+:172R a :Song ;
+    :HasGenre :172RGenre ;
+    :HasPrice :172RPrice ;
+    :IsFrom :NothingButTheBeat ;
+    :Name "Little Bad Girl ( Feat . Taio Cruz & Ludacris ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :172RTime ;
+    :ReleasedOn "2011-08-26 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:176R a :Song ;
+    :HasGenre :176RGenre ;
+    :HasPrice :176RPrice ;
+    :IsFrom :BeautifulNowRemixes ;
+    :Name "Beautiful Now ( KDrew Remix ) [ feat . Jon Bellion ]"^^xsd:string ;
+    :PlayTime :176RTime ;
+    :ReleasedOn "2015-07-10 00:00:00"^^xsd:string ;
+    :SungBy :Zedd .
+
+:17R a :Song ;
+    :HasGenre :17RGenre ;
+    :HasPrice :17RPrice ;
+    :IsFrom :VHSExplicit ;
+    :Name "Moving Day ( Interlude )"^^xsd:string ;
+    :PlayTime :17RTime ;
+    :ReleasedOn "2015-06-30 00:00:00"^^xsd:string ;
+    :SungBy :XAmbassadors .
+
+:180R a :Song ;
+    :HasGenre :180RGenre ;
+    :HasPrice :180RPrice ;
+    :IsFrom :BeautifulNowRemixes ;
+    :Name "Beautiful Now ( Marshmello Remix ) [ feat . Jon Bellion ]"^^xsd:string ;
+    :PlayTime :180RTime ;
+    :ReleasedOn "2015-07-10 00:00:00"^^xsd:string ;
+    :SungBy :Zedd .
+
+:187R a :Song ;
+    :HasGenre :187RGenre ;
+    :HasPrice :187RPrice ;
+    :IsFrom :TheSoundOfMadnessExplicitDeluxe ;
+    :Name "Her Name Is Alice ( Bonus Track )"^^xsd:string ;
+    :PlayTime :187RTime ;
+    :ReleasedOn "2008-06-24 00:00:00"^^xsd:string ;
+    :SungBy :Shinedown .
+
+:18R a :Song ;
+    :HasGenre :18RGenre ;
+    :HasPrice :18RPrice ;
+    :IsFrom :VHSClean ;
+    :Name "Adam & Noah 's Priorities ( Interlude )"^^xsd:string ;
+    :PlayTime :18RTime ;
+    :ReleasedOn "2015-06-30 00:00:00"^^xsd:string ;
+    :SungBy :XAmbassadors .
+
+:192R a :Song ;
+    :HasGenre :192RGenre ;
+    :HasPrice :192RPrice ;
+    :IsFrom :SomewhereInTheStratosphere ;
+    :Name "Intro ( Scary Fairy ) [ Live From Washington State ]"^^xsd:string ;
+    :PlayTime :192RTime ;
+    :ReleasedOn "2011-04-18 00:00:00"^^xsd:string ;
+    :SungBy :Shinedown .
+
+:198R a :Song ;
+    :HasGenre :198RGenre ;
+    :HasPrice :198RPrice ;
+    :IsFrom :TheWarnerSoundLiveRoomEP ;
+    :Name "Bully ( The Live Room )"^^xsd:string ;
+    :PlayTime :198RTime ;
+    :ReleasedOn "2013-05-28 00:00:00"^^xsd:string ;
+    :SungBy :Shinedown .
+
+:1R a :Song ;
+    :HasGenre :1RGenre ;
+    :HasPrice :1RPrice ;
+    :IsFrom :TitleDeluxe ;
+    :Name "Credit"^^xsd:string ;
+    :PlayTime :1RTime ;
+    :ReleasedOn "2015-01-09 00:00:00"^^xsd:string ;
+    :SungBy :MeghanTrainor .
+
+:207R a :Song ;
+    :HasGenre :207RGenre ;
+    :HasPrice :207RPrice ;
+    :IsFrom :UsAndThemDeluxeExplicit ;
+    :Name "Fake [ Demo ]"^^xsd:string ;
+    :PlayTime :207RTime ;
+    :ReleasedOn "2005-10-04 00:00:00"^^xsd:string ;
+    :SungBy :Shinedown .
+
+:213R a :Song ;
+    :HasGenre :213RGenre ;
+    :HasPrice :213RPrice ;
+    :IsFrom :TheSoundOfMadnessExplicitDeluxe ;
+    :Name "Son Of Sam ( Bonus Track )"^^xsd:string ;
+    :PlayTime :213RTime ;
+    :ReleasedOn "2008-06-24 00:00:00"^^xsd:string ;
+    :SungBy :Shinedown .
+
+:214R a :Song ;
+    :HasGenre :214RGenre ;
+    :HasPrice :214RPrice ;
+    :IsFrom :UsAndThemDeluxeExplicit ;
+    :Name "Save Me [ Acoustic ]"^^xsd:string ;
+    :PlayTime :214RTime ;
+    :ReleasedOn "2005-10-04 00:00:00"^^xsd:string ;
+    :SungBy :Shin .
+
+:215R a :Song ;
+    :HasGenre :215RGenre ;
+    :HasPrice :215RPrice ;
+    :IsFrom :IgnitetheNightPartyEditionExplicit ;
+    :Name "Jack Daniels and Jesus"^^xsd:string ;
+    :PlayTime :215RTime ;
+    :ReleasedOn "2014-08-19 00:00:00"^^xsd:string ;
+    :SungBy :ChaseRice .
+
+:219R a :Song ;
+    :HasGenre :219RGenre ;
+    :HasPrice :219RPrice ;
+    :IsFrom :ColeSwindell ;
+    :Name "The Back Roads & The Back Row"^^xsd:string ;
+    :PlayTime :219RTime ;
+    :ReleasedOn "2014-02-18 00:00:00"^^xsd:string ;
+    :SungBy :ColeSwin .
+
+:224R a :Song ;
+    :HasGenre :224RGenre ;
+    :HasPrice :224RPrice ;
+    :IsFrom :GreatestHitsVol1 ;
+    :Name "Voy a Beber ( Remix )"^^xsd:string ;
+    :PlayTime :224RTime ;
+    :ReleasedOn "2014-11-04 00:00:00"^^xsd:string ;
+    :SungBy :NickyJam .
+
+:22R a :Song ;
+    :HasGenre :22RGenre ;
+    :HasPrice :22RPrice ;
+    :IsFrom :HotelCabanaDeluxeVersionExplicit ;
+    :Name "Wonder [ feat . Emeli SandÌ © ]"^^xsd:string ;
+    :PlayTime :22RTime ;
+    :ReleasedOn "2014-05-06 00:00:00"^^xsd:string ;
+    :SungBy :NaughtyBoy .
+
+:231R a :Song ;
+    :HasGenre :231RGenre ;
+    :HasPrice :231RPrice ;
+    :IsFrom :LiveAfterDeafCollection ;
+    :Name "Dear Chicago ( Live in Stockholm )"^^xsd:string ;
+    :PlayTime :231RTime ;
+    :ReleasedOn "2012-07-02 00:00:00"^^xsd:string ;
+    :SungBy :RyanAdams .
+
+:240R a :Song ;
+    :HasGenre :240RGenre ;
+    :HasPrice :240RPrice ;
+    :IsFrom :LiveAfterDeafCollection ;
+    :Name "The Rescue Blues ( Live in London 1 )"^^xsd:string ;
+    :PlayTime :240RTime ;
+    :ReleasedOn "2012-07-02 00:00:00"^^xsd:string ;
+    :SungBy :DavidRyanAdams .
+
+:244R a :Song ;
+    :HasGenre :244RGenre ;
+    :HasPrice :244RPrice ;
+    :IsFrom :TheBestOfYolandaAdams ;
+    :Name "Let Us Worship Him"^^xsd:string ;
+    :PlayTime :244RTime ;
+    :ReleasedOn "1990-01-01 00:00:00"^^xsd:string ;
+    :SungBy :YolandaAdams .
+
+:251R a :Song ;
+    :HasGenre :251RGenre ;
+    :HasPrice :251RPrice ;
+    :IsFrom :NoShoesNoShirtNoProblems ;
+    :Name "I Ca n't Go There ( Acoustic Version )"^^xsd:string ;
+    :PlayTime :251RTime ;
+    :ReleasedOn "2002-04-02 00:00:00"^^xsd:string ;
+    :SungBy :KennyChesney .
+
+:259R a :Song ;
+    :HasGenre :259RGenre ;
+    :HasPrice :259RPrice ;
+    :IsFrom :49AllTimeGreatestHits ;
+    :Name "Ruby , Do n't Take Your Love To Town"^^xsd:string ;
+    :PlayTime :259RTime ;
+    :ReleasedOn "2008-08-01 00:00:00"^^xsd:string ;
+    :SungBy :KennyRogers .
+
+:265R a :Song ;
+    :HasGenre :265RGenre ;
+    :HasPrice :265RPrice ;
+    :IsFrom :FettyWapDeluxeExplicit ;
+    :Name "My Way ( feat . Monty ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :265RTime ;
+    :ReleasedOn "2015-09-25 00:00:00"^^xsd:string ;
+    :SungBy :FettyWap .
+
+:269R a :Song ;
+    :HasGenre :269RGenre ;
+    :HasPrice :269RPrice ;
+    :IsFrom :FettyWapDeluxeClean ;
+    :Name "How We Do Things ( feat . Monty ) [ Clean ]"^^xsd:string ;
+    :PlayTime :269RTime ;
+    :ReleasedOn "2015-09-25 00:00:00"^^xsd:string ;
+    :SungBy :WapFetty .
+
+:26R a :Song ;
+    :HasGenre :26RGenre ;
+    :HasPrice :26RPrice ;
+    :IsFrom :HotelCabanaExplicit ;
+    :Name "Wonder [ feat . Emeli SandÌ © ]"^^xsd:string ;
+    :PlayTime :26RTime ;
+    :ReleasedOn "2014-05-06 00:00:00"^^xsd:string ;
+    :SungBy :ShahidKhan .
+
+:272R a :Song ;
+    :HasGenre :272RGenre ;
+    :HasPrice :272RPrice ;
+    :IsFrom :FettyWapClean ;
+    :Name "Time ( feat . Monty ) [ Clean ]"^^xsd:string ;
+    :PlayTime :272RTime ;
+    :ReleasedOn "2015-09-25 00:00:00"^^xsd:string ;
+    :SungBy :FettyWap .
+
+:276R a :Song ;
+    :HasGenre :276RGenre ;
+    :HasPrice :276RPrice ;
+    :IsFrom :FettyWapDeluxeExplicit ;
+    :Name "Whateva ( feat . Monty ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :276RTime ;
+    :ReleasedOn "2015-09-25 00:00:00"^^xsd:string ;
+    :SungBy :FettyWap .
+
+:27R a :Song ;
+    :HasGenre :27RGenre ;
+    :HasPrice :27RPrice ;
+    :IsFrom :HotelCabanaExplicit ;
+    :Name "Think About It [ feat . Wiz Khalifa ] [ Explicit ]"^^xsd:string ;
+    :PlayTime :27RTime ;
+    :ReleasedOn "2014-05-06 00:00:00"^^xsd:string ;
+    :SungBy :NaughtyBoy .
+
+:281R a :Song ;
+    :HasGenre :281RGenre ;
+    :HasPrice :281RPrice ;
+    :IsFrom :FettyWapExplicit ;
+    :Name "Rewind ( feat . Monty ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :281RTime ;
+    :ReleasedOn "2015-09-25 00:00:00"^^xsd:string ;
+    :SungBy :FettyWap .
+
+:284R a :Song ;
+    :HasGenre :284RGenre ;
+    :HasPrice :284RPrice ;
+    :IsFrom :LiveAfterDeafLondon2 ;
+    :Name "English Girls Approximately ( Live in London 2 )"^^xsd:string ;
+    :PlayTime :284RTime ;
+    :ReleasedOn "2012-07-02 00:00:00"^^xsd:string ;
+    :SungBy :AdamsRyan .
+
+:288R a :Song ;
+    :HasGenre :288RGenre ;
+    :HasPrice :288RPrice ;
+    :IsFrom :UptownSpecialClean ;
+    :Name "Crack In the Pearl"^^xsd:string ;
+    :PlayTime :288RTime ;
+    :ReleasedOn "2015-01-13 00:00:00"^^xsd:string ;
+    :SungBy :MarkRonson .
+
+:294R a :Song ;
+    :HasGenre :294RGenre ;
+    :HasPrice :294RPrice ;
+    :IsFrom :TheMachinesfeatCevinFisher ;
+    :Name "The Machines ( feat . Cevin Fisher )"^^xsd:string ;
+    :PlayTime :294RTime ;
+    :ReleasedOn "2015-06-22 00:00:00"^^xsd:string ;
+    :SungBy :MarkKnightHarryRomeroChusCeballos .
+
+:295R a :Song ;
+    :HasGenre :295RGenre ;
+    :HasPrice :295RPrice ;
+    :IsFrom :BlameRemixes ;
+    :Name "Blame ( Burns Remix )"^^xsd:string ;
+    :PlayTime :295RTime ;
+    :ReleasedOn "2014-11-10 00:00:00"^^xsd:string ;
+    :SungBy :CalvinHarrisfeatJohnNewman .
+
+:298R a :Song ;
+    :HasGenre :298RGenre ;
+    :HasPrice :298RPrice ;
+    :IsFrom :PraytoGodRemixes ;
+    :Name "Pray to God ( R3hab Remix )"^^xsd:string ;
+    :PlayTime :298RTime ;
+    :ReleasedOn "2015-09-25 00:00:00"^^xsd:string ;
+    :SungBy :CalvinHarrisfeatHAIM .
+
+:299R a :Song ;
+    :HasGenre :299RGenre ;
+    :HasPrice :299RPrice ;
+    :IsFrom :PraytoGodRemixes ;
+    :Name "Pray to God ( R3hab Remix )"^^xsd:string ;
+    :PlayTime :299RTime ;
+    :ReleasedOn "2015-09-25 00:00:00"^^xsd:string ;
+    :SungBy :CalvinHarrisfeatHAIM .
+
+:29R a :Song ;
+    :HasGenre :29RGenre ;
+    :HasPrice :29RPrice ;
+    :IsFrom :HotelCabanaDeluxeVersionExplicit ;
+    :Name "Hollywood [ feat . Gabrielle ]"^^xsd:string ;
+    :PlayTime :29RTime ;
+    :ReleasedOn "2014-05-06 00:00:00"^^xsd:string ;
+    :SungBy :NaughtyBoy .
+
+:300R a :Song ;
+    :HasGenre :300RGenre ;
+    :HasPrice :300RPrice ;
+    :IsFrom :HowDeepIsYourLoveRemixes ;
+    :Name "How Deep Is Your Love ( Disciples & Unorthodox Remix )"^^xsd:string ;
+    :PlayTime :300RTime ;
+    :ReleasedOn "2015-08-07 00:00:00"^^xsd:string ;
+    :SungBy :CalvinHarrisDisciples .
+
+:303R a :Song ;
+    :HasGenre :303RGenre ;
+    :HasPrice :303RPrice ;
+    :IsFrom :ReadyForTheWeekend ;
+    :Name "Ready for the Weekend ( Album Version )"^^xsd:string ;
+    :PlayTime :303RTime ;
+    :ReleasedOn "2013-07-23 00:00:00"^^xsd:string ;
+    :SungBy :CalvinHarris .
+
+:307R a :Song ;
+    :HasGenre :307RGenre ;
+    :HasPrice :307RPrice ;
+    :IsFrom :BadRomanceRemixes ;
+    :Name "Bad Romance ( Kaskade Remix )"^^xsd:string ;
+    :PlayTime :307RTime ;
+    :ReleasedOn "2009-12-21 00:00:00"^^xsd:string ;
+    :SungBy :LadyGaga .
+
+:317R a :Song ;
+    :HasGenre :317RGenre ;
+    :HasPrice :317RPrice ;
+    :IsFrom :ONIFCExplicit ;
+    :Name "Initiation ( feat . Lola Monroe ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :317RTime ;
+    :ReleasedOn "2012-12-04 00:00:00"^^xsd:string ;
+    :SungBy :WizKhalifa .
+
+:330R a :Song ;
+    :HasGenre :330RGenre ;
+    :HasPrice :330RPrice ;
+    :IsFrom :BlaccHollywoodDeluxeExplicit ;
+    :Name "You And Your Friends ( feat . Snoop Dogg & Ty Dolla $ ign ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :330RTime ;
+    :ReleasedOn "2014-08-19 00:00:00"^^xsd:string ;
+    :SungBy :CameronJibrilThomaz .
+
+:335R a :Song ;
+    :HasGenre :335RGenre ;
+    :HasPrice :335RPrice ;
+    :IsFrom :FlightSchoolExplicit ;
+    :Name "I 'm Good [ Explicit ]"^^xsd:string ;
+    :PlayTime :335RTime ;
+    :ReleasedOn "2009-04-17 00:00:00"^^xsd:string ;
+    :SungBy :WizKhalifa .
+
+:342R a :Song ;
+    :HasGenre :342RGenre ;
+    :HasPrice :342RPrice ;
+    :IsFrom :BlaccHollywoodDeluxeExplicit ;
+    :Name "Still Down ( feat . Chevy Woods & Ty Dolla $ ign ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :342RTime ;
+    :ReleasedOn "2014-08-19 00:00:00"^^xsd:string ;
+    :SungBy :WizKhalifa .
+
+:344R a :Song ;
+    :HasGenre :344RGenre ;
+    :HasPrice :344RPrice ;
+    :IsFrom :BlaccHollywoodDeluxeExplicit ;
+    :Name "We Dem Boyz Remix ( feat . Rick Ross , ScHoolboy Q & Nas ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :344RTime ;
+    :ReleasedOn "2014-08-19 00:00:00"^^xsd:string ;
+    :SungBy :WizKhalifa .
+
+:346R a :Song ;
+    :HasGenre :346RGenre ;
+    :HasPrice :346RPrice ;
+    :IsFrom :BlaccHollywoodDeluxeExplicit ;
+    :Name "We Dem Boyz Remix ( feat . Rick Ross , ScHoolboy Q & Nas ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :346RTime ;
+    :ReleasedOn "2014-08-19 00:00:00"^^xsd:string ;
+    :SungBy :WizKhalifa .
+
+:34R a :Song ;
+    :HasGenre :34RGenre ;
+    :HasPrice :34RPrice ;
+    :IsFrom :HotelCabanaDeluxeVersionExplicit ;
+    :Name "Never Been The Same [ feat . Thabo ]"^^xsd:string ;
+    :PlayTime :34RTime ;
+    :ReleasedOn "2014-05-06 00:00:00"^^xsd:string ;
+    :SungBy :NaughtyBoy .
+
+:353R a :Song ;
+    :HasGenre :353RGenre ;
+    :HasPrice :353RPrice ;
+    :IsFrom :ONIFCExplicit ;
+    :Name "Remember You ( feat . The Weeknd ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :353RTime ;
+    :ReleasedOn "2012-12-04 00:00:00"^^xsd:string ;
+    :SungBy :KhalifaWiz .
+
+:358R a :Song ;
+    :HasGenre :358RGenre ;
+    :HasPrice :358RPrice ;
+    :IsFrom :BlaccHollywoodDeluxeExplicit ;
+    :Name "House In The Hills ( feat . Curren $ y ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :358RTime ;
+    :ReleasedOn "2014-08-19 00:00:00"^^xsd:string ;
+    :SungBy :WizKhalifa .
+
+:360R a :Song ;
+    :HasGenre :360RGenre ;
+    :HasPrice :360RPrice ;
+    :IsFrom :ONIFCExplicit ;
+    :Name "Rise Above ( feat . Pharrell , Tuki Carter & Amber Rose ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :360RTime ;
+    :ReleasedOn "2012-12-04 00:00:00"^^xsd:string ;
+    :SungBy :WizKhalifa .
+
+:367R a :Song ;
+    :HasGenre :367RGenre ;
+    :HasPrice :367RPrice ;
+    :IsFrom :ONIFCExplicit ;
+    :Name "Bluffin ( feat . Berner ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :367RTime ;
+    :ReleasedOn "2012-12-04 00:00:00"^^xsd:string ;
+    :SungBy :WizKhalifa .
+
+:369R a :Song ;
+    :HasGenre :369RGenre ;
+    :HasPrice :369RPrice ;
+    :IsFrom :WildOnes ;
+    :Name "Wild Ones ( feat . Sia )"^^xsd:string ;
+    :PlayTime :369RTime ;
+    :ReleasedOn "2012-06-22 00:00:00"^^xsd:string ;
+    :SungBy :FloRida .
+
+:374R a :Song ;
+    :HasGenre :374RGenre ;
+    :HasPrice :374RPrice ;
+    :IsFrom :WildOnesFeatSiaRemixesPt2 ;
+    :Name "Wild Ones ( Feat . Sia ) ( Maison & Dragen Remix )"^^xsd:string ;
+    :PlayTime :374RTime ;
+    :ReleasedOn "2012-04-24 00:00:00"^^xsd:string ;
+    :SungBy :FloRida .
+
+:376R a :Song ;
+    :HasGenre :376RGenre ;
+    :HasPrice :376RPrice ;
+    :IsFrom :GoodFeelingRemixes ;
+    :Name "Good Feeling ( Jaywalker Remix )"^^xsd:string ;
+    :PlayTime :376RTime ;
+    :ReleasedOn "2011-11-15 00:00:00"^^xsd:string ;
+    :SungBy :FloRida .
+
+:378R a :Song ;
+    :HasGenre :378RGenre ;
+    :HasPrice :378RPrice ;
+    :IsFrom :WelcometoFloRidaExplicit ;
+    :Name "Street Money ( feat . Rick Ross ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :378RTime ;
+    :ReleasedOn "2015-04-06 00:00:00"^^xsd:string ;
+    :SungBy :FloRida .
+
+:392R a :Song ;
+    :HasGenre :392RGenre ;
+    :HasPrice :392RPrice ;
+    :IsFrom :Illinois ;
+    :Name "Going Away For A While"^^xsd:string ;
+    :PlayTime :392RTime ;
+    :ReleasedOn "2015-09-11 00:00:00"^^xsd:string ;
+    :SungBy :BrettEldredge .
+
+:395R a :Song ;
+    :HasGenre :395RGenre ;
+    :HasPrice :395RPrice ;
+    :IsFrom :EverythingIs4Clean ;
+    :Name "X2CU"^^xsd:string ;
+    :PlayTime :395RTime ;
+    :ReleasedOn "2015-06-01 00:00:00"^^xsd:string ;
+    :SungBy :JasonDerulo .
+
+:40R a :Song ;
+    :HasGenre :40RGenre ;
+    :HasPrice :40RPrice ;
+    :IsFrom :NickJonasDeluxeClean ;
+    :Name "Numb [ feat . Angel Haze ] [ Clean ]"^^xsd:string ;
+    :PlayTime :40RTime ;
+    :ReleasedOn "2014-11-10 00:00:00"^^xsd:string ;
+    :SungBy :NickJonas .
+
+:416R a :Song ;
+    :HasGenre :416RGenre ;
+    :HasPrice :416RPrice ;
+    :IsFrom :SkrillexandDiplopresentJackExplicit ;
+    :Name "Take ÌÏ There ( feat . Kiesza )"^^xsd:string ;
+    :PlayTime :416RTime ;
+    :ReleasedOn "2015-02-24 00:00:00"^^xsd:string ;
+    :SungBy :SkrillexDiplo .
+
+:419R a :Song ;
+    :HasGenre :419RGenre ;
+    :HasPrice :419RPrice ;
+    :IsFrom :TakeTherefeatKieszaRemixes ;
+    :Name "Take ÌÏ There ( feat . Kiesza ) [ Felix Cartal Remix ]"^^xsd:string ;
+    :PlayTime :419RTime ;
+    :ReleasedOn "2014-12-23 00:00:00"^^xsd:string ;
+    :SungBy :SkrillexDiplo .
+
+:429R a :Song ;
+    :HasGenre :429RGenre ;
+    :HasPrice :429RPrice ;
+    :IsFrom :WhereAreNowwithJustinBieberRemixes ;
+    :Name "Where Are ÌÏ Now ( with Justin Bieber ) [ Marshmello Remix ]"^^xsd:string ;
+    :PlayTime :429RTime ;
+    :ReleasedOn "2015-06-16 00:00:00"^^xsd:string ;
+    :SungBy :SkrillexDiplo .
+
+:430R a :Song ;
+    :HasGenre :430RGenre ;
+    :HasPrice :430RPrice ;
+    :IsFrom :SkrillexandDiplopresentJackExplicit ;
+    :Name "Febreze ( feat . 2 Chainz ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :430RTime ;
+    :ReleasedOn "2015-02-24 00:00:00"^^xsd:string ;
+    :SungBy :SkrillexDiplo .
+
+:435R a :Song ;
+    :HasGenre :435RGenre ;
+    :HasPrice :435RPrice ;
+    :IsFrom :BeautifulNowScoutRemix ;
+    :Name "Beautiful Now ( Scout Remix ) [ feat . Jon Bellion ]"^^xsd:string ;
+    :PlayTime :435RTime ;
+    :ReleasedOn "2015-10-09 00:00:00"^^xsd:string ;
+    :SungBy :AntonIgorevichZaslavski .
+
+:439R a :Song ;
+    :HasGenre :439RGenre ;
+    :HasPrice :439RPrice ;
+    :IsFrom :GreatestHits18Kids ;
+    :Name "Days Go By"^^xsd:string ;
+    :PlayTime :439RTime ;
+    :ReleasedOn "2007-11-20 00:00:00"^^xsd:string ;
+    :SungBy :KeithUrban .
+
+:43R a :Song ;
+    :HasGenre :43RGenre ;
+    :HasPrice :43RPrice ;
+    :IsFrom :NickJonasDeluxeClean ;
+    :Name "Closer [ feat . Mike Posner ] [ Clean ]"^^xsd:string ;
+    :PlayTime :43RTime ;
+    :ReleasedOn "2014-11-10 00:00:00"^^xsd:string ;
+    :SungBy :NickJonas .
+
+:445R a :Song ;
+    :HasGenre :445RGenre ;
+    :HasPrice :445RPrice ;
+    :IsFrom :PopforYourWeekendExplicit ;
+    :Name "Drunk in Love [ Explicit ]"^^xsd:string ;
+    :PlayTime :445RTime ;
+    :ReleasedOn "2015-09-25 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:447R a :Song ;
+    :HasGenre :447RGenre ;
+    :HasPrice :447RPrice ;
+    :IsFrom :OneLoveDeluxeVersion ;
+    :Name "Gettin ' Over ( Feat . Chris Willis ; Continuous Mix Version )"^^xsd:string ;
+    :PlayTime :447RTime ;
+    :ReleasedOn "2009-08-21 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:449R a :Song ;
+    :HasGenre :449RGenre ;
+    :HasPrice :449RPrice ;
+    :IsFrom :PopforYourWeekendExplicit ;
+    :Name "We Found Love"^^xsd:string ;
+    :PlayTime :449RTime ;
+    :ReleasedOn "2014-08-19 00:00:00"^^xsd:string ;
+    :SungBy :DavidGuetta .
+
+:452R a :Song ;
+    :HasGenre :452RGenre ;
+    :HasPrice :452RPrice ;
+    :IsFrom :SettleTheRemixes ;
+    :Name "Voices ( Wookie Remix ) [ feat . Sasha Keable ]"^^xsd:string ;
+    :PlayTime :452RTime ;
+    :ReleasedOn "2013-12-16 00:00:00"^^xsd:string ;
+    :SungBy :Disclosure .
+
+:455R a :Song ;
+    :HasGenre :455RGenre ;
+    :HasPrice :455RPrice ;
+    :IsFrom :Settle ;
+    :Name "Second Chance"^^xsd:string ;
+    :PlayTime :455RTime ;
+    :ReleasedOn "2013-06-11 00:00:00"^^xsd:string ;
+    :SungBy :Disclosure .
+
+:456R a :Song ;
+    :HasGenre :456RGenre ;
+    :HasPrice :456RPrice ;
+    :IsFrom :Settle ;
+    :Name "Defeated No More [ feat . Edward Macfarlane ]"^^xsd:string ;
+    :PlayTime :456RTime ;
+    :ReleasedOn "2013-06-11 00:00:00"^^xsd:string ;
+    :SungBy :Disclosure .
+
+:462R a :Song ;
+    :HasGenre :462RGenre ;
+    :HasPrice :462RPrice ;
+    :IsFrom :PriceleEditedVersion ;
+    :Name "Been About Money ( Album Version ( Edited ) )"^^xsd:string ;
+    :PlayTime :462RTime ;
+    :ReleasedOn "2009-11-23 00:00:00"^^xsd:string ;
+    :SungBy :Birdman .
+
+:465R a :Song ;
+    :HasGenre :465RGenre ;
+    :HasPrice :465RPrice ;
+    :IsFrom :ThankMeLaterExplicitVersionExplicit ;
+    :Name "Up All Night ( Explicit ) [ feat . Nicki Minaj ]"^^xsd:string ;
+    :PlayTime :465RTime ;
+    :ReleasedOn "2010-06-15 00:00:00"^^xsd:string ;
+    :SungBy :Drake .
+
+:475R a :Song ;
+    :HasGenre :475RGenre ;
+    :HasPrice :475RPrice ;
+    :IsFrom :TheHobbitTheDesolationofSmaugOriginalMotionPictureSoundtrackSpecialEdition ;
+    :Name "The High Fells ( Extended Version )"^^xsd:string ;
+    :PlayTime :475RTime ;
+    :ReleasedOn "2013-12-10 00:00:00"^^xsd:string ;
+    :SungBy :HowardShore .
+
+:478R a :Song ;
+    :HasGenre :478RGenre ;
+    :HasPrice :478RPrice ;
+    :IsFrom :TheHobbitTheDesolationofSmaugOriginalMotionPictureSoundtrackSpecialEdition ;
+    :Name "My Armor Is Iron"^^xsd:string ;
+    :PlayTime :478RTime ;
+    :ReleasedOn "2013-12-10 00:00:00"^^xsd:string ;
+    :SungBy :HowardShore .
+
+:480R a :Song ;
+    :HasGenre :480RGenre ;
+    :HasPrice :480RPrice ;
+    :IsFrom :HalcyonDeluxe ;
+    :Name "I Know You Care"^^xsd:string ;
+    :PlayTime :480RTime ;
+    :ReleasedOn "2013-08-27 00:00:00"^^xsd:string ;
+    :SungBy :EllieGoulding .
+
+:484R a :Song ;
+    :HasGenre :484RGenre ;
+    :HasPrice :484RPrice ;
+    :IsFrom :OnlyOneFloPart1DeluxeVideoDigitalBooklet ;
+    :Name "On and On ( Feat . Kevin Rudolf )"^^xsd:string ;
+    :PlayTime :484RTime ;
+    :ReleasedOn "2010-11-26 00:00:00"^^xsd:string ;
+    :SungBy :FloRida .
+
+:48R a :Song ;
+    :HasGenre :48RGenre ;
+    :HasPrice :48RPrice ;
+    :IsFrom :x ;
+    :Name "Afire Love"^^xsd:string ;
+    :PlayTime :48RTime ;
+    :ReleasedOn "2014-06-20 00:00:00"^^xsd:string ;
+    :SungBy :EdSheeran .
+
+:495R a :Song ;
+    :HasGenre :495RGenre ;
+    :HasPrice :495RPrice ;
+    :IsFrom :Believe ;
+    :Name "Die In Your Arms ( Album Version )"^^xsd:string ;
+    :PlayTime :495RTime ;
+    :ReleasedOn "2012-06-19 00:00:00"^^xsd:string ;
+    :SungBy :BieberJustin .
+
+:49AllTimeGreatestHits a :Album ;
+    :HasAlbumName "49 All Time Greatest Hits"^^xsd:string ;
+    :HasArtist :KennyRogers ;
+    :HasCopyright "( c ) 2008 Goldenlane Records"^^xsd:string ;
+    :HasSong :259R .
+
+:504R a :Song ;
+    :HasGenre :504RGenre ;
+    :HasPrice :504RPrice ;
+    :IsFrom :LoveOnTheInside ;
+    :Name "We Run"^^xsd:string ;
+    :PlayTime :504RTime ;
+    :ReleasedOn "2008-07-29 00:00:00"^^xsd:string ;
+    :SungBy :Sugarland .
+
+:511R a :Song ;
+    :HasGenre :511RGenre ;
+    :HasPrice :511RPrice ;
+    :IsFrom :StartHere ;
+    :Name "Your Side Of Town"^^xsd:string ;
+    :PlayTime :511RTime ;
+    :ReleasedOn "2015-08-28 00:00:00"^^xsd:string ;
+    :SungBy :MaddieTae .
+
+:517R a :Song ;
+    :HasGenre :517RGenre ;
+    :HasPrice :517RPrice ;
+    :IsFrom :MidnightMemoriesDeluxe ;
+    :Name "Something Great"^^xsd:string ;
+    :PlayTime :517RTime ;
+    :ReleasedOn "2013-11-25 00:00:00"^^xsd:string ;
+    :SungBy :OneDirection .
+
+:51R a :Song ;
+    :HasGenre :51RGenre ;
+    :HasPrice :51RPrice ;
+    :IsFrom :NAME ;
+    :Name "Sunburn ( Deluxe Edition )"^^xsd:string ;
+    :PlayTime :51RTime ;
+    :ReleasedOn "2011-09-09 00:00:00"^^xsd:string ;
+    :SungBy :EdwardChristopherSheeran .
+
+:522R a :Song ;
+    :HasGenre :522RGenre ;
+    :HasPrice :522RPrice ;
+    :IsFrom :RecoveryAmazonVersionExplicitvideodigitalbooklet ;
+    :Name "Space Bound [ Explicit ]"^^xsd:string ;
+    :PlayTime :522RTime ;
+    :ReleasedOn "2010-06-21 00:00:00"^^xsd:string ;
+    :SungBy :Emin .
+
+:530R a :Song ;
+    :HasGenre :530RGenre ;
+    :HasPrice :530RPrice ;
+    :IsFrom :TrilogyEditedVersionClean ;
+    :Name "Gone ( Album Version ( Edited ) ) [ Clean ]"^^xsd:string ;
+    :PlayTime :530RTime ;
+    :ReleasedOn "2015-09-18 00:00:00"^^xsd:string ;
+    :SungBy :TheWeeknd .
+
+:532R a :Song ;
+    :HasGenre :532RGenre ;
+    :HasPrice :532RPrice ;
+    :IsFrom :BlaccHollywoodDeluxeExplicit ;
+    :Name "You And Your Friends ( feat . Snoop Dogg & Ty Dolla $ ign ) [ Explicit ]"^^xsd:string ;
+    :PlayTime :532RTime ;
+    :ReleasedOn "2014-08-19 00:00:00"^^xsd:string ;
+    :SungBy :WizKhalifa .
+
+:535R a :Song ;
+    :HasGenre :535RGenre ;
+    :HasPrice :535RPrice ;
+    :IsFrom :DoggumentaryEdited ;
+    :Name "Platinum ( ( Feat . R. Kelly ) [ Edited ] )"^^xsd:string ;
+    :PlayTime :535RTime ;
+    :ReleasedOn "2011-03-29 00:00:00"^^xsd:string ;
+    :SungBy :SnoopDogg .
+
+:54R a :Song ;
+    :HasGenre :54RGenre ;
+    :HasPrice :54RPrice ;
+    :IsFrom :TakeIttotheBankEP ;
+    :Name "I Ai n't Livin ' Long Like This"^^xsd:string ;
+    :PlayTime :54RTime ;
+    :ReleasedOn "2014-02-24 00:00:00"^^xsd:string ;
+    :SungBy :ChrisJanson .
+
+:60R a :Song ;
+    :HasGenre :60RGenre ;
+    :HasPrice :60RPrice ;
+    :IsFrom :LoveMeLikeYouDoMadePopularByEllieGoulding ;
+    :Name "Love Me Like You Do ( Sax Instrumental Version )"^^xsd:string ;
+    :PlayTime :60RTime ;
+    :ReleasedOn "2015-08-28 00:00:00"^^xsd:string ;
+    :SungBy :JustinWard .
+
+:71R a :Song ;
+    :HasGenre :71RGenre ;
+    :HasPrice :71RPrice ;
+    :IsFrom :Vessel ;
+    :Name "Truce"^^xsd:string ;
+    :PlayTime :71RTime ;
+    :ReleasedOn "2013-01-04 00:00:00"^^xsd:string ;
+    :SungBy :twentyonepilots .
+
+:75R a :Song ;
+    :HasGenre :75RGenre ;
+    :HasPrice :75RPrice ;
+    :IsFrom :MississippiTheAlbumExplicitVersion ;
+    :Name "Choose Me ( Album Version ( Edited ) ) [ feat . Sky ] [ Clean ]"^^xsd:string ;
+    :PlayTime :75RTime ;
+    :ReleasedOn "2003-05-20 00:00:00"^^xsd:string ;
+    :SungBy :DavidBanner .
+
+:90R a :Song ;
+    :HasGenre :90RGenre ;
+    :HasPrice :90RPrice ;
+    :IsFrom :HeyMamafeatNickiMinajBebeRexhaAfrojackRemixesEP ;
+    :Name "Hey Mama ( feat . Nicki Minaj , Bebe Rexha & Afrojack ) [ Club Killers Remix ]"^^xsd:string ;
+    :PlayTime :90RTime ;
+    :ReleasedOn "2015-05-12 00:00:00"^^xsd:string ;
+    :SungBy :PierreDavidGuetta .
+
+:AdamsRyan a :Artist ;
+    :HasAlbum :LiveAfterDeafLondon2 ;
+    :HasArtistName "Adams Ryan"^^xsd:string ;
+    :Sang :284R .
+
+:AntonIgorevichZaslavski a :Artist ;
+    :HasAlbum :BeautifulNowScoutRemix ;
+    :HasArtistName "Anton Igorevich Zaslavski"^^xsd:string ;
+    :Sang :435R .
+
+:BadRomanceRemixes a :Album ;
+    :HasAlbumName "Bad Romance Remixes"^^xsd:string ;
+    :HasArtist :LadyGaga ;
+    :HasCopyright "( C ) 2009 Interscope Records"^^xsd:string ;
+    :HasSong :307R .
+
+:BeautifulNowScoutRemix a :Album ;
+    :HasAlbumName "Beautiful Now ( Scout Remix )"^^xsd:string ;
+    :HasArtist :AntonIgorevichZaslavski ;
+    :HasCopyright "( C ) 2015 Interscope Records"^^xsd:string ;
+    :HasSong :435R .
+
+:Believe a :Album ;
+    :HasAlbumName "Believe"^^xsd:string ;
+    :HasArtist :BieberJustin ;
+    :HasCopyright "( C ) 2012 The Island Def Jam Music Group"^^xsd:string ;
+    :HasSong :495R .
+
+:BieberJustin a :Artist ;
+    :HasAlbum :Believe ;
+    :HasArtistName "Bieber Justin"^^xsd:string ;
+    :Sang :495R .
+
+:Birdman a :Artist ;
+    :HasAlbum :PriceleEditedVersion ;
+    :HasArtistName "Birdman"^^xsd:string ;
+    :Sang :462R .
+
+:BlameRemixes a :Album ;
+    :HasAlbumName "Blame ( Remixes )"^^xsd:string ;
+    :HasArtist :CalvinHarrisfeatJohnNewman ;
+    :HasCopyright "2013 1i Music"^^xsd:string ;
+    :HasSong :295R .
+
+:BrettEldredge a :Artist ;
+    :HasAlbum :Illinois ;
+    :HasArtistName "Brett Eldredge"^^xsd:string ;
+    :Sang :392R .
+
+:CalvinHarris a :Artist ;
+    :HasAlbum :ReadyForTheWeekend ;
+    :HasArtistName "Calvin Harris"^^xsd:string ;
+    :Sang :303R .
+
+:CalvinHarrisDisciples a :Artist ;
+    :HasAlbum :HowDeepIsYourLoveRemixes ;
+    :HasArtistName "Calvin Harris & Disciples"^^xsd:string ;
+    :Sang :300R .
+
+:CalvinHarrisfeatJohnNewman a :Artist ;
+    :HasAlbum :BlameRemixes ;
+    :HasArtistName "Calvin Harris feat . John Newman"^^xsd:string ;
+    :Sang :295R .
+
+:CameronJibrilThomaz a :Artist ;
+    :HasAlbum :BlaccHollywoodDeluxeExplicit ;
+    :HasArtistName "Cameron Jibril Thomaz"^^xsd:string .
+
+:CertifiedEditedVersion a :Album ;
+    :HasAlbumName "Certified ( Edited Version )"^^xsd:string ;
+    :HasArtist :DavidBanner ;
+    :HasCopyright "( C ) 2014 Island Records , a division of UMG Recordings , Inc."^^xsd:string ;
+    :HasSong :171R .
+
+:ChaseRice a :Artist ;
+    :HasAlbum :IgnitetheNightPartyEditionExplicit ;
+    :HasArtistName "Chase Rice"^^xsd:string ;
+    :Sang :215R .
+
+:ChrisJanson a :Artist ;
+    :HasAlbum :TakeIttotheBankEP ;
+    :HasArtistName "Chris Janson"^^xsd:string ;
+    :Sang :54R .
+
+:ColeSwin a :Artist ;
+    :HasAlbum :ColeSwindell ;
+    :HasArtistName "Cole Swin"^^xsd:string ;
+    :Sang :219R .
+
+:ColeSwindell a :Album ;
+    :HasAlbumName "Cole Swindell"^^xsd:string ;
+    :HasArtist :ColeSwin ;
+    :HasCopyright "( C ) 2011 UMG Recordings , Inc."^^xsd:string ;
+    :HasSong :219R .
+
+:DaviBann a :Artist ;
+    :HasAlbum :YaoMingfeatWayne2ChainzExplicit ;
+    :HasArtistName "Davi Bann"^^xsd:string ;
+    :Sang :116R .
+
+:DavidRyanAdams a :Artist ;
+    :HasAlbum :LiveAfterDeafCollection ;
+    :HasArtistName "David Ryan Adams"^^xsd:string ;
+    :Sang :231R,
+        :240R .
+
+:DoggumentaryEdited a :Album ;
+    :HasAlbumName "Doggumentary [ Edited ]"^^xsd:string ;
+    :HasArtist :SnoopDogg ;
+    :HasCopyright "( C ) 2011 Capitol Records , LLC"^^xsd:string ;
+    :HasSong :535R .
+
+:Drake a :Artist ;
+    :HasAlbum :ThankMeLaterExplicitVersionExplicit ;
+    :HasArtistName "Drake"^^xsd:string ;
+    :Sang :465R .
+
+:EdSheeran a :Artist ;
+    :HasAlbum :x ;
+    :HasArtistName "Ed Sheeran"^^xsd:string ;
+    :Sang :48R .
+
+:EdwardChristopherSheeran a :Artist ;
+    :HasAlbum :NAME ;
+    :HasArtistName "Edward Christopher Sheeran"^^xsd:string ;
+    :Sang :51R .
+
+:EllieGoulding a :Artist ;
+    :HasAlbum :HalcyonDeluxe ;
+    :HasArtistName "Ellie Goulding"^^xsd:string ;
+    :Sang :480R .
+
+:Emin a :Artist ;
+    :HasAlbum :RecoveryAmazonVersionExplicitvideodigitalbooklet ;
+    :HasArtistName "Emin"^^xsd:string ;
+    :Sang :522R .
+
+:EverythingIs4Clean a :Album ;
+    :HasAlbumName "Everything Is 4 [ Clean ]"^^xsd:string ;
+    :HasArtist :JasonDerulo ;
+    :HasCopyright "2011 Because Music"^^xsd:string ;
+    :HasSong :395R .
+
+:FettyWapClean a :Album ;
+    :HasAlbumName "Fetty Wap [ Clean ]"^^xsd:string ;
+    :HasArtist :FettyWap ;
+    :HasCopyright "( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves"^^xsd:string ;
+    :HasSong :272R .
+
+:FettyWapDeluxeClean a :Album ;
+    :HasAlbumName "Fetty Wap ( Deluxe ) [ Clean ]"^^xsd:string ;
+    :HasArtist :WapFetty ;
+    :HasCopyright "( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves"^^xsd:string ;
+    :HasSong :269R .
+
+:FettyWapExplicit a :Album ;
+    :HasAlbumName "Fetty Wap [ Explicit ]"^^xsd:string ;
+    :HasArtist :FettyWap ;
+    :HasCopyright "( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves"^^xsd:string ;
+    :HasSong :281R .
+
+:FlightSchoolExplicit a :Album ;
+    :HasAlbumName "Flight School [ Explicit ]"^^xsd:string ;
+    :HasArtist :WizKhalifa ;
+    :HasCopyright "2013 Mad Decent"^^xsd:string ;
+    :HasSong :335R .
+
+:GoodFeelingRemixes a :Album ;
+    :HasAlbumName "Good Feeling ( Remixes )"^^xsd:string ;
+    :HasArtist :FloRida ;
+    :HasCopyright "( C ) 2009 MPL Tours Inc. under exclusive license to StarCon LLC d/b/a Hear MusicTM"^^xsd:string ;
+    :HasSong :376R .
+
+:GreatestHits18Kids a :Album ;
+    :HasAlbumName "Greatest Hits - 18 Kids"^^xsd:string ;
+    :HasArtist :KeithUrban ;
+    :HasCopyright "å © 2007 Capitol Records Nashville . All rights reserved . Unauthorized reproduction is a violation of applicable laws . Manufactured by Capitol Records Nashville , 3322 West End Avenue , 11th Floor , Nash"^^xsd:string ;
+    :HasSong :439R .
+
+:GreatestHitsVol1 a :Album ;
+    :HasAlbumName "Greatest Hits , Vol . 1"^^xsd:string ;
+    :HasArtist :NickyJam ;
+    :HasCopyright "( C ) 2014 La industria Inc"^^xsd:string ;
+    :HasSong :224R .
+
+:HalcyonDeluxe a :Album ;
+    :HasAlbumName "Halcyon ( Deluxe )"^^xsd:string ;
+    :HasArtist :EllieGoulding ;
+    :HasCopyright "( C ) 2013 Polydor Ltd. ( UK )"^^xsd:string ;
+    :HasSong :480R .
+
+:HeyMamafeatNickiMinajBebeRexhaAfrojackRemixesEP a :Album ;
+    :HasAlbumName "Hey Mama ( feat . Nicki Minaj , Bebe Rexha & Afrojack ) [ Remixes EP ]"^^xsd:string ;
+    :HasArtist :PierreDavidGuetta ;
+    :HasCopyright "2015 Michelle Kelly"^^xsd:string ;
+    :HasSong :90R .
+
+:HowDeepIsYourLoveRemixes a :Album ;
+    :HasAlbumName "How Deep Is Your Love ( Remixes )"^^xsd:string ;
+    :HasArtist :CalvinHarrisDisciples ;
+    :HasCopyright "( C ) 2015 Island Records , a division of Universal Music Operations Limited"^^xsd:string ;
+    :HasSong :300R .
+
+:IgnitetheNightPartyEditionExplicit a :Album ;
+    :HasAlbumName "Ignite the Night ( Party Edition ) [ Explicit ]"^^xsd:string ;
+    :HasArtist :ChaseRice ;
+    :HasCopyright "( C ) 2014 Dack Janiels Records , under exclusive license to Sony Music Entertainment ."^^xsd:string ;
+    :HasSong :215R .
+
+:Illinois a :Album ;
+    :HasAlbumName "Illinois"^^xsd:string ;
+    :HasArtist :BrettEldredge ;
+    :HasCopyright "( c ) Phonotype"^^xsd:string ;
+    :HasSong :392R .
+
+:JasonDerulo a :Artist ;
+    :HasAlbum :EverythingIs4Clean ;
+    :HasArtistName "Jason Derulo"^^xsd:string ;
+    :Sang :395R .
+
+:JustinWard a :Artist ;
+    :HasAlbum :LoveMeLikeYouDoMadePopularByEllieGoulding ;
+    :HasArtistName "Justin Ward"^^xsd:string ;
+    :Sang :60R .
+
+:KeithUrban a :Artist ;
+    :HasAlbum :GreatestHits18Kids ;
+    :HasArtistName "Keith Urban"^^xsd:string ;
+    :Sang :439R .
+
+:KennyChesney a :Artist ;
+    :HasAlbum :NoShoesNoShirtNoProblems ;
+    :HasArtistName "Kenny Chesney"^^xsd:string ;
+    :Sang :251R .
+
+:KennyRogers a :Artist ;
+    :HasAlbum :49AllTimeGreatestHits ;
+    :HasArtistName "Kenny Rogers"^^xsd:string ;
+    :Sang :259R .
+
+:KhalifaWiz a :Artist ;
+    :HasAlbum :ONIFCExplicit ;
+    :HasArtistName "Khalifa Wiz"^^xsd:string .
+
+:LadyGaga a :Artist ;
+    :HasAlbum :BadRomanceRemixes ;
+    :HasArtistName "Lady Gaga"^^xsd:string ;
+    :Sang :307R .
+
+:Listen a :Album ;
+    :HasAlbumName "Listen"^^xsd:string ;
+    :HasArtist :DavidGuetta ;
+    :HasCopyright "2015 If Moving Your Mine"^^xsd:string ;
+    :HasSong :104R .
+
+:LiveAfterDeafLondon2 a :Album ;
+    :HasAlbumName "Live After Deaf ( London 2 )"^^xsd:string ;
+    :HasArtist :AdamsRyan ;
+    :HasCopyright "2012 PAXAM RECORDS"^^xsd:string ;
+    :HasSong :284R .
+
+:LoveMeLikeYouDoMadePopularByEllieGoulding a :Album ;
+    :HasAlbumName "Love Me Like You Do - Made Popular By Ellie Goulding"^^xsd:string ;
+    :HasArtist :JustinWard ;
+    :HasCopyright "( c ) 2015 Covered Records"^^xsd:string ;
+    :HasSong :60R .
+
+:LoveOnTheInside a :Album ;
+    :HasAlbumName "Love On The Inside"^^xsd:string ;
+    :HasArtist :Sugarland ;
+    :HasCopyright "( C ) 2008 Mercury Records , a Division of UMG Recordings , Inc."^^xsd:string ;
+    :HasSong :504R .
+
+:MaddieTae a :Artist ;
+    :HasAlbum :StartHere ;
+    :HasArtistName "Maddie & Tae"^^xsd:string ;
+    :Sang :511R .
+
+:MarkKnightHarryRomeroChusCeballos a :Artist ;
+    :HasAlbum :TheMachinesfeatCevinFisher ;
+    :HasArtistName "Mark Knight , Harry Romero , Chus & Ceballos"^^xsd:string ;
+    :Sang :294R .
+
+:MarkRonson a :Artist ;
+    :HasAlbum :UptownSpecialClean ;
+    :HasArtistName "Mark Ronson"^^xsd:string ;
+    :Sang :288R .
+
+:MeghanTrainor a :Artist ;
+    :HasAlbum :TitleDeluxe ;
+    :HasArtistName "Meghan Trainor"^^xsd:string ;
+    :Sang :1R .
+
+:MidnightMemoriesDeluxe a :Album ;
+    :HasAlbumName "Midnight Memories ( Deluxe )"^^xsd:string ;
+    :HasArtist :OneDirection ;
+    :HasCopyright "( C ) 2014 Disney Enterprises , Inc."^^xsd:string ;
+    :HasSong :517R .
+
+:MississippiTheAlbumExplicitVersion a :Album ;
+    :HasAlbumName "Mississippi-The Album ( Explicit Version )"^^xsd:string ;
+    :HasArtist :DavidBanner ;
+    :HasCopyright "( C ) 2003 Universal Records , a Division of UMG Recordings , Inc."^^xsd:string ;
+    :HasSong :75R .
+
+:NAME a :Album ;
+    :HasAlbumName "#NAME ?"^^xsd:string ;
+    :HasArtist :EdwardChristopherSheeran ;
+    :HasCopyright "Doll records"^^xsd:string ;
+    :HasSong :51R .
+
+:NickyJam a :Artist ;
+    :HasAlbum :GreatestHitsVol1 ;
+    :HasArtistName "Nicky Jam"^^xsd:string ;
+    :Sang :224R .
+
+:NoShoesNoShirtNoProblems a :Album ;
+    :HasAlbumName "No Shoes , No Shirt , No Problems"^^xsd:string ;
+    :HasArtist :KennyChesney ;
+    :HasCopyright "Underground Avenue"^^xsd:string ;
+    :HasSong :251R .
+
+:OneDirection a :Artist ;
+    :HasAlbum :MidnightMemoriesDeluxe ;
+    :HasArtistName "One Direction"^^xsd:string ;
+    :Sang :517R .
+
+:OnlyOneFloPart1DeluxeVideoDigitalBooklet a :Album ;
+    :HasAlbumName "Only One Flo ( Part 1 ) [ Deluxe ] [ + Video ] [ + Digital Booklet ]"^^xsd:string ;
+    :HasArtist :FloRida ;
+    :HasCopyright "2010 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States"^^xsd:string ;
+    :HasSong :484R .
+
+:PriceleEditedVersion a :Album ;
+    :HasAlbumName "Pricele $ $ ( Edited Version )"^^xsd:string ;
+    :HasArtist :Birdman ;
+    :HasCopyright "( C ) 2009 Cash Money Records Inc."^^xsd:string ;
+    :HasSong :462R .
+
+:ReadyForTheWeekend a :Album ;
+    :HasAlbumName "Ready For The Weekend"^^xsd:string ;
+    :HasArtist :CalvinHarris ;
+    :HasCopyright "( C ) 1994 UMG Recordings , Inc."^^xsd:string ;
+    :HasSong :303R .
+
+:RecoveryAmazonVersionExplicitvideodigitalbooklet a :Album ;
+    :HasAlbumName "Recovery ( Amazon Version ) [ Explicit ] [ + video ] [ + digital booklet ]"^^xsd:string ;
+    :HasArtist :Emin ;
+    :HasCopyright "( C ) 2010 Aftermath Records"^^xsd:string ;
+    :HasSong :522R .
+
+:RyanAdams a :Artist ;
+    :HasAlbum :LiveAfterDeafCollection ;
+    :HasArtistName "Ryan Adams"^^xsd:string .
+
+:SettleTheRemixes a :Album ;
+    :HasAlbumName "Settle ( The Remixes )"^^xsd:string ;
+    :HasArtist :Disclosure ;
+    :HasCopyright "( C ) 2013 Universal Island Records , a division of Universal Music Operations Limited"^^xsd:string ;
+    :HasSong :452R .
+
+:ShahidKhan a :Artist ;
+    :HasAlbum :HotelCabanaExplicit ;
+    :HasArtistName "Shahid Khan"^^xsd:string .
+
+:Shin a :Artist ;
+    :HasAlbum :UsAndThemDeluxeExplicit ;
+    :HasArtistName "Shin"^^xsd:string ;
+    :Sang :187R,
+        :192R,
+        :198R,
+        :207R,
+        :213R,
+        :214R .
+
+:SnoopDogg a :Artist ;
+    :HasAlbum :DoggumentaryEdited ;
+    :HasArtistName "Snoop Dogg"^^xsd:string ;
+    :Sang :535R .
+
+:SomewhereInTheStratosphere a :Album ;
+    :HasAlbumName "Somewhere In The Stratosphere"^^xsd:string ;
+    :HasArtist :Shinedown ;
+    :HasCopyright "( C ) 2005 MCA Nashville"^^xsd:string ;
+    :HasSong :192R .
+
+:StartHere a :Album ;
+    :HasAlbumName "Start Here"^^xsd:string ;
+    :HasArtist :MaddieTae ;
+    :HasCopyright "( C ) 2015 Republic Records , a Division of UMG Recordings , Inc. ( Dot Records )"^^xsd:string ;
+    :HasSong :511R .
+
+:Sugarland a :Artist ;
+    :HasAlbum :LoveOnTheInside ;
+    :HasArtistName "Sugarland"^^xsd:string ;
+    :Sang :504R .
+
+:TakeIttotheBankEP a :Album ;
+    :HasAlbumName "Take It to the Bank ( EP )"^^xsd:string ;
+    :HasArtist :ChrisJanson ;
+    :HasCopyright "( C ) 2012 Cash Money Records Inc."^^xsd:string ;
+    :HasSong :54R .
+
+:TakeTherefeatKieszaRemixes a :Album ;
+    :HasAlbumName "Take ÌÏ There ( feat . Kiesza ) [ Remixes ]"^^xsd:string ;
+    :HasArtist :SkrillexDiplo ;
+    :HasCopyright "2010 Robbins Entertainment LLC"^^xsd:string ;
+    :HasSong :419R .
+
+:ThankMeLaterExplicitVersionExplicit a :Album ;
+    :HasAlbumName "Thank Me Later ( Explicit Version ) [ Explicit ]"^^xsd:string ;
+    :HasArtist :Drake ;
+    :HasCopyright "( C ) 2010 Young Money Entertainment/Cash Money Records"^^xsd:string ;
+    :HasSong :465R .
+
+:TheBestOfYolandaAdams a :Album ;
+    :HasAlbumName "The Best Of Yolanda Adams"^^xsd:string ;
+    :HasArtist :YolandaAdams ;
+    :HasCopyright "( C ) 2004 Universal International Music BV"^^xsd:string ;
+    :HasSong :244R .
+
+:TheMachinesfeatCevinFisher a :Album ;
+    :HasAlbumName "The Machines ( feat . Cevin Fisher )"^^xsd:string ;
+    :HasArtist :MarkKnightHarryRomeroChusCeballos ;
+    :HasCopyright "Toolroom Productions"^^xsd:string ;
+    :HasSong :294R .
+
+:TheWarnerSoundLiveRoomEP a :Album ;
+    :HasAlbumName "The Warner Sound Live Room EP"^^xsd:string ;
+    :HasArtist :Shinedown ;
+    :HasCopyright "2013 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States"^^xsd:string ;
+    :HasSong :198R .
+
+:TheWeeknd a :Artist ;
+    :HasAlbum :TrilogyEditedVersionClean ;
+    :HasArtistName "The Weeknd"^^xsd:string ;
+    :Sang :530R .
+
+:TitleDeluxe a :Album ;
+    :HasAlbumName "Title ( Deluxe )"^^xsd:string ;
+    :HasArtist :MeghanTrainor ;
+    :HasCopyright "2011 What A Music Ltd , licence exclusive Parlophone Music France"^^xsd:string ;
+    :HasSong :1R .
+
+:TrilogyEditedVersionClean a :Album ;
+    :HasAlbumName "Trilogy ( Edited Version ) [ Clean ]"^^xsd:string ;
+    :HasArtist :TheWeeknd ;
+    :HasCopyright "( C ) 2013 XO & co. , Inc."^^xsd:string ;
+    :HasSong :530R .
+
+:UptownSpecialClean a :Album ;
+    :HasAlbumName "Uptown Special [ Clean ]"^^xsd:string ;
+    :HasArtist :MarkRonson ;
+    :HasCopyright "2015 Real Sounds"^^xsd:string ;
+    :HasSong :288R .
+
+:VHSClean a :Album ;
+    :HasAlbumName "VHS [ Clean ]"^^xsd:string ;
+    :HasArtist :XAmbassadors ;
+    :HasCopyright "( C ) 2015 KIDinaKORNER/Interscope Records"^^xsd:string ;
+    :HasSong :18R .
+
+:Vessel a :Album ;
+    :HasAlbumName "Vessel"^^xsd:string ;
+    :HasArtist :twentyonepilots ;
+    :HasCopyright "( C ) 2000 Columbia Pictures Industries , Inc."^^xsd:string ;
+    :HasSong :71R .
+
+:WapFetty a :Artist ;
+    :HasAlbum :FettyWapDeluxeClean ;
+    :HasArtistName "Wap Fetty"^^xsd:string ;
+    :Sang :269R .
+
+:WelcometoFloRidaExplicit a :Album ;
+    :HasAlbumName "Welcome to Flo Rida [ Explicit ]"^^xsd:string ;
+    :HasArtist :FloRida ;
+    :HasCopyright "2015 CMG Records"^^xsd:string ;
+    :HasSong :378R .
+
+:WhereAreNowwithJustinBieberRemixes a :Album ;
+    :HasAlbumName "Where Are ÌÏ Now ( with Justin Bieber ) [ Remixes ]"^^xsd:string ;
+    :HasArtist :SkrillexDiplo ;
+    :HasCopyright "2015 OWSLA / Mad Decent / Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company"^^xsd:string ;
+    :HasSong :429R .
+
+:WildOnes a :Album ;
+    :HasAlbumName "Wild Ones"^^xsd:string ;
+    :HasArtist :FloRida ;
+    :HasCopyright "( C ) 2015 MCA Nashville , a Division of UMG Recordings , Inc."^^xsd:string ;
+    :HasSong :369R .
+
+:WildOnesFeatSiaRemixesPt2 a :Album ;
+    :HasAlbumName "Wild Ones ( Feat . Sia ) [ Remixes Pt. 2 ]"^^xsd:string ;
+    :HasArtist :FloRida ;
+    :HasCopyright "( C ) 2015 MCA Nashville , a Division of UMG Recordings , Inc."^^xsd:string ;
+    :HasSong :374R .
+
+:YaoMingfeatWayne2ChainzExplicit a :Album ;
+    :HasAlbumName "Yao Ming ( feat . Wayne & 2 Chainz ) [ Explicit ]"^^xsd:string ;
+    :HasArtist :DaviBann ;
+    :HasCopyright "2013 b.i.G. f.a.c.e. Ent"^^xsd:string ;
+    :HasSong :116R .
+
+:YolandaAdams a :Artist ;
+    :HasAlbum :TheBestOfYolandaAdams ;
+    :HasArtistName "Yolanda Adams"^^xsd:string ;
+    :Sang :244R .
+
+:twentyonepilots a :Artist ;
+    :HasAlbum :Vessel ;
+    :HasArtistName "twenty one pilots"^^xsd:string ;
+    :Sang :71R .
+
+:x a :Album ;
+    :HasAlbumName "x"^^xsd:string ;
+    :HasArtist :EdSheeran ;
+    :HasCopyright "( C ) 2014 mau5trap Recordings Ltd"^^xsd:string ;
+    :HasSong :48R .
+
+:BeautifulNowRemixes a :Album ;
+    :HasAlbumName "Beautiful Now ( Remixes )"^^xsd:string ;
+    :HasArtist :Zedd ;
+    :HasCopyright "( C ) 2015 Interscope Records"^^xsd:string ;
+    :HasSong :176R,
+        :180R .
+
+:CalvinHarrisfeatHAIM a :Artist ;
+    :HasAlbum :PraytoGodRemixes ;
+    :HasArtistName "Calvin Harris feat . HAIM"^^xsd:string ;
+    :Sang :298R,
+        :299R .
+
+:FettyWapDeluxeExplicit a :Album ;
+    :HasAlbumName "Fetty Wap ( Deluxe ) [ Explicit ]"^^xsd:string ;
+    :HasArtist :FettyWap ;
+    :HasCopyright "( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves"^^xsd:string ;
+    :HasSong :265R,
+        :276R .
+
+:GuettaDavid a :Artist ;
+    :HasAlbum :ListenDeluxe ;
+    :HasArtistName "Guetta David"^^xsd:string .
+
+:HowardShore a :Artist ;
+    :HasAlbum :TheHobbitTheDesolationofSmaugOriginalMotionPictureSoundtrackSpecialEdition ;
+    :HasArtistName "Howard Shore"^^xsd:string ;
+    :Sang :475R,
+        :478R .
+
+:NickJonas a :Artist ;
+    :HasAlbum :NickJonasDeluxeClean ;
+    :HasArtistName "Nick Jonas"^^xsd:string ;
+    :Sang :40R,
+        :43R .
+
+:NickJonasDeluxeClean a :Album ;
+    :HasAlbumName "Nick Jonas ( Deluxe ) [ Clean ]"^^xsd:string ;
+    :HasArtist :NickJonas ;
+    :HasCopyright "( C ) 2014 Island Records/Safehouse Records LLC , a division of UMG Recordings , Inc."^^xsd:string ;
+    :HasSong :40R,
+        :43R .
+
+:PopforYourWeekendExplicit a :Album ;
+    :HasAlbumName "Pop for Your Weekend [ Explicit ]"^^xsd:string ;
+    :HasArtist :DavidGuetta ;
+    :HasCopyright "2012 Blue Drum Records"^^xsd:string ;
+    :HasSong :445R,
+        :449R .
+
+:PraytoGodRemixes a :Album ;
+    :HasAlbumName "Pray to God ( Remixes )"^^xsd:string ;
+    :HasArtist :CalvinHarrisfeatHAIM ;
+    :HasCopyright "( C ) 2015 Third Pardee Records , LLC under exclusive license to Interscope Records in the United States"^^xsd:string ;
+    :HasSong :298R,
+        :299R .
+
+:Settle a :Album ;
+    :HasAlbumName "Settle"^^xsd:string ;
+    :HasArtist :Disclosure ;
+    :HasCopyright "( C ) 2013 Universal Island Records , a division of Universal Music Operations Limited"^^xsd:string ;
+    :HasSong :455R,
+        :456R .
+
+:SkrillexandDiplopresentJackExplicit a :Album ;
+    :HasAlbumName "Skrillex and Diplo present Jack ÌÏ [ Explicit ]"^^xsd:string ;
+    :HasArtist :SkrillexDiplo ;
+    :HasCopyright "2012 Knight Skreams"^^xsd:string ;
+    :HasSong :416R,
+        :430R .
+
+:TheHobbitTheDesolationofSmaugOriginalMotionPictureSoundtrackSpecialEdition a :Album ;
+    :HasAlbumName "The Hobbit : The Desolation of Smaug ( Original Motion Picture Soundtrack ) [ Special Edition ]"^^xsd:string ;
+    :HasArtist :HowardShore ;
+    :HasCopyright "2013 WaterTower Music / Warner Bros. . Entertainment / Metro - Goldwyn Mayer Pictures Inc."^^xsd:string ;
+    :HasSong :475R,
+        :478R .
+
+:TheSoundOfMadnessExplicitDeluxe a :Album ;
+    :HasAlbumName "The Sound Of Madness [ Explicit ] [ Deluxe ]"^^xsd:string ;
+    :HasArtist :Shinedown ;
+    :HasCopyright "2005 Z Records"^^xsd:string ;
+    :HasSong :187R,
+        :213R .
+
+:VHSExplicit a :Album ;
+    :HasAlbumName "VHS [ Explicit ]"^^xsd:string ;
+    :HasArtist :XAmbassadors ;
+    :HasCopyright "( C ) 2015 KIDinaKORNER/Interscope Records"^^xsd:string ;
+    :HasSong :13R,
+        :17R .
+
+:Zedd a :Artist ;
+    :HasAlbum :BeautifulNowRemixes ;
+    :HasArtistName "Zedd"^^xsd:string ;
+    :Sang :176R,
+        :180R .
+
+:DaviGuet a :Artist ;
+    :HasAlbum :NothingButTheBeat,
+        :NothingButtheBeat20Explicit ;
+    :HasArtistName "Davi Guet"^^xsd:string ;
+    :Sang :104R,
+        :107R,
+        :108R,
+        :120R,
+        :123R,
+        :124R,
+        :130R,
+        :155R,
+        :158R,
+        :159R,
+        :160R,
+        :165R,
+        :166R,
+        :172R,
+        :445R,
+        :447R,
+        :449R,
+        :90R .
+
+:DavidBanner a :Artist ;
+    :HasAlbum :CertifiedEditedVersion,
+        :MississippiTheAlbumExplicitVersion ;
+    :HasArtistName "David Banner"^^xsd:string ;
+    :Sang :171R,
+        :75R .
+
+:HotelCabanaDeluxeVersionExplicit a :Album ;
+    :HasAlbumName "Hotel Cabana ( Deluxe Version ) [ Explicit ]"^^xsd:string ;
+    :HasArtist :NaughtyBoy ;
+    :HasCopyright "( C ) 2014 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd"^^xsd:string ;
+    :HasSong :22R,
+        :29R,
+        :34R .
+
+:HotelCabanaExplicit a :Album ;
+    :HasAlbumName "Hotel Cabana [ Explicit ]"^^xsd:string ;
+    :HasArtist :NaughtyBoy,
+        :ShahidKhan ;
+    :HasCopyright "( C ) 2014 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd"^^xsd:string ;
+    :HasSong :26R,
+        :27R .
+
+:LiveAfterDeafCollection a :Album ;
+    :HasAlbumName "Live After Deaf ( Collection )"^^xsd:string ;
+    :HasArtist :DavidRyanAdams,
+        :RyanAdams ;
+    :HasCopyright "2012 PAXAM RECORDS"^^xsd:string ;
+    :HasSong :231R,
+        :240R .
+
+:UsAndThemDeluxeExplicit a :Album ;
+    :HasAlbumName "Us And Them ( Deluxe ) [ Explicit ]"^^xsd:string ;
+    :HasArtist :Shin,
+        :Shinedown ;
+    :HasCopyright "2015 Real Sounds"^^xsd:string ;
+    :HasSong :207R,
+        :214R .
+
+:WhenLoveTakesOverfeatKellyRowland a :Album ;
+    :HasAlbumName "When Love Takes Over ( feat . Kelly Rowland )"^^xsd:string ;
+    :HasArtist :DavidGuetta,
+        :PierreDavidGuetta ;
+    :HasCopyright "( C ) 2015 The Valory Music Co. , LLC"^^xsd:string ;
+    :HasSong :120R,
+        :124R .
+
+:Disclosure a :Artist ;
+    :HasAlbum :Settle,
+        :SettleTheRemixes ;
+    :HasArtistName "Disclosure"^^xsd:string ;
+    :Sang :452R,
+        :455R,
+        :456R .
+
+:OneLoveDeluxeVersion a :Album ;
+    :HasAlbumName "One Love ( Deluxe Version )"^^xsd:string ;
+    :HasArtist :DavidGuetta ;
+    :HasCopyright "( C ) 2014 Swedish House Mafia Holdings Ltd ( BVI ) under exclusive license to Virgin Records Ltd"^^xsd:string ;
+    :HasSong :123R,
+        :130R,
+        :166R,
+        :447R .
+
+:XAmbassadors a :Artist ;
+    :HasAlbum :VHSClean,
+        :VHSExplicit ;
+    :HasArtistName "X Ambassadors"^^xsd:string ;
+    :Sang :13R,
+        :17R,
+        :18R .
+
+:ListenDeluxe a :Album ;
+    :HasAlbumName "Listen ( Deluxe )"^^xsd:string ;
+    :HasArtist :DavidGuetta,
+        :GuettaDavid ;
+    :HasCopyright "2015 If Moving Your Mine"^^xsd:string ;
+    :HasSong :107R,
+        :108R,
+        :110R,
+        :142R .
+
+:NaughtyBoy a :Artist ;
+    :HasAlbum :HotelCabanaDeluxeVersionExplicit,
+        :HotelCabanaExplicit ;
+    :HasArtistName "Naughty Boy"^^xsd:string ;
+    :Sang :22R,
+        :26R,
+        :27R,
+        :29R,
+        :34R .
+
+:NothingButTheBeat a :Album ;
+    :HasAlbumName "Nothing But The Beat"^^xsd:string ;
+    :HasArtist :DaviGuet,
+        :DavidGuetta,
+        :PierreDavidGuetta ;
+    :HasCopyright "2009 Andy Henningsen"^^xsd:string ;
+    :HasSong :159R,
+        :160R,
+        :172R .
+
+:NothingButtheBeat20Explicit a :Album ;
+    :HasAlbumName "Nothing But the Beat 2.0 [ Explicit ]"^^xsd:string ;
+    :HasArtist :DaviGuet,
+        :DavidGuetta,
+        :PierreDavidGuetta ;
+    :HasCopyright "2015 Real Sounds"^^xsd:string ;
+    :HasSong :155R,
+        :158R,
+        :165R .
+
+:ONIFCExplicit a :Album ;
+    :HasAlbumName "O.N.I.F.C. [ Explicit ]"^^xsd:string ;
+    :HasArtist :KhalifaWiz,
+        :WizKhalifa ;
+    :HasCopyright "2012 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States"^^xsd:string ;
+    :HasSong :317R,
+        :353R,
+        :360R,
+        :367R .
+
+:FettyWap a :Artist ;
+    :HasAlbum :FettyWapClean,
+        :FettyWapDeluxeExplicit,
+        :FettyWapExplicit ;
+    :HasArtistName "Fetty Wap"^^xsd:string ;
+    :Sang :265R,
+        :272R,
+        :276R,
+        :281R .
+
+:SkrillexDiplo a :Artist ;
+    :HasAlbum :SkrillexandDiplopresentJackExplicit,
+        :TakeTherefeatKieszaRemixes,
+        :WhereAreNowwithJustinBieberRemixes ;
+    :HasArtistName "Skrillex & Diplo"^^xsd:string,
+        "Skrillex , Diplo"^^xsd:string ;
+    :Sang :416R,
+        :419R,
+        :429R,
+        :430R .
+
+:BlaccHollywoodDeluxeExplicit a :Album ;
+    :HasAlbumName "Blacc Hollywood ( Deluxe ) [ Explicit ]"^^xsd:string ;
+    :HasArtist :CameronJibrilThomaz,
+        :WizKhalifa ;
+    :HasCopyright "2014 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company"^^xsd:string ;
+    :HasSong :330R,
+        :342R,
+        :344R,
+        :346R,
+        :358R,
+        :532R .
+
+:PierreDavidGuetta a :Artist ;
+    :HasAlbum :HeyMamafeatNickiMinajBebeRexhaAfrojackRemixesEP,
+        :NothingButTheBeat,
+        :NothingButtheBeat20Explicit,
+        :WhenLoveTakesOverfeatKellyRowland ;
+    :HasArtistName "Pierre David Guetta"^^xsd:string .
+
+:Shinedown a :Artist ;
+    :HasAlbum :SomewhereInTheStratosphere,
+        :TheSoundOfMadnessExplicitDeluxe,
+        :TheWarnerSoundLiveRoomEP,
+        :UsAndThemDeluxeExplicit ;
+    :HasArtistName "Shinedown"^^xsd:string .
+
+:FloRida a :Artist ;
+    :HasAlbum :GoodFeelingRemixes,
+        :OnlyOneFloPart1DeluxeVideoDigitalBooklet,
+        :WelcometoFloRidaExplicit,
+        :WildOnes,
+        :WildOnesFeatSiaRemixesPt2 ;
+    :HasArtistName "Flo Rida"^^xsd:string ;
+    :Sang :369R,
+        :374R,
+        :376R,
+        :378R,
+        :484R .
+
+:WizKhalifa a :Artist ;
+    :HasAlbum :BlaccHollywoodDeluxeExplicit,
+        :FlightSchoolExplicit,
+        :ONIFCExplicit ;
+    :HasArtistName "Wiz Khalifa"^^xsd:string ;
+    :Sang :317R,
+        :330R,
+        :335R,
+        :342R,
+        :344R,
+        :346R,
+        :353R,
+        :358R,
+        :360R,
+        :367R,
+        :532R .
+
+:DavidGuetta a :Artist ;
+    :HasAlbum :Listen,
+        :ListenDeluxe,
+        :NothingButTheBeat,
+        :NothingButtheBeat20Explicit,
+        :OneLoveDeluxeVersion,
+        :PopforYourWeekendExplicit,
+        :WhenLoveTakesOverfeatKellyRowland ;
+    :HasArtistName "David Guetta"^^xsd:string ;
+    :Sang :110R,
+        :142R .
+
+:Artist a owl:Class .
+
+:Album a owl:Class .
+
+:Genre a owl:Class .
+
+:Price a owl:Class .
+
+:Time a owl:Class .
+
+:Song a owl:Class .
+

@@ -1,0 +1,158 @@
+@prefix : <http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#> .
+
+<http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#HasAlbum
+:HasAlbum rdf:type owl:ObjectProperty ;
+          owl:inverseOf :HasArtist ;
+          rdfs:domain :Artist ;
+          rdfs:range :Album .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#HasArtist
+:HasArtist rdf:type owl:ObjectProperty ;
+           rdfs:domain :Album ;
+           rdfs:range :Artist .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#HasGenre
+:HasGenre rdf:type owl:ObjectProperty ;
+          rdfs:domain :Song ;
+          rdfs:range :Genre .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#HasPrice
+:HasPrice rdf:type owl:ObjectProperty ;
+          rdfs:domain :Song ;
+          rdfs:range :Price .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#HasSong
+:HasSong rdf:type owl:ObjectProperty ;
+         owl:inverseOf :IsFrom ;
+         rdfs:domain :Album ;
+         rdfs:range :Song .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#IsFrom
+:IsFrom rdf:type owl:ObjectProperty ;
+        rdfs:domain :Song ;
+        rdfs:range :Album .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#PlayTime
+:PlayTime rdf:type owl:ObjectProperty ;
+          rdfs:domain :Song ;
+          rdfs:range :Time .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#Sang
+:Sang rdf:type owl:ObjectProperty ;
+      owl:inverseOf :SungBy ;
+      rdfs:domain :Artist ;
+      rdfs:range :Song .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#SungBy
+:SungBy rdf:type owl:ObjectProperty ;
+        rdfs:domain :Song ;
+        rdfs:range :Artist .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#Duration
+:Duration rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Time ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#GenreList
+:GenreList rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Genre ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#HasAlbumName
+:HasAlbumName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Album ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#HasAmount
+:HasAmount rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Price ;
+           rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#HasArtistName
+:HasArtistName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Artist ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#HasCopyright
+:HasCopyright rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Album ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#HasCurrency
+:HasCurrency rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Price ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#Name
+:Name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Song ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#ReleasedOn
+:ReleasedOn rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Song ;
+            rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#Album
+:Album rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#Artist
+:Artist rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#Genre
+:Genre rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#Price
+:Price rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#Song
+:Song rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/nikhil/ontologies/right/Itunes-Ontology#Time
+:Time rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
