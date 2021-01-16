@@ -38,3 +38,20 @@ sparql.setReturnFormat(N3)
 results = sparql.query().convert()
 g.parse(data=results,format="turtle")
 g.serialize(destination="test_properties.ttl",format='turtle')
+
+
+"""
+CONSTRUCT { wd:P3000 wd:Q21503250 ?class_domain . 
+            wd:P3000 wd:Q21510865 ?class_range .
+          }
+{
+   wd:P123 p:P2302 [ #ps:P2302 wd:Q21510865; 
+                    ps:P2302 wd:Q21503250 ; 
+                     pq:P2308 ?class_domain ] .
+  
+   OPTIONAL { wd:P123 p:P2302 [ #ps:P2302 wd:Q21510865; 
+                    ps:P2302 wd:Q21510865 ; 
+                     pq:P2308 ?class_range ] . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+ }
+"""
