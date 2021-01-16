@@ -1,0 +1,212 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+
+dbo:almaMater owl:equivalentProperty wikidata:P69 .
+
+dbo:anthem owl:equivalentProperty wikidata:P85 .
+
+dbo:architect owl:equivalentProperty wikidata:P84 .
+
+dbo:architecturalStyle owl:equivalentProperty wikidata:P149 .
+
+dbo:artist owl:equivalentProperty wikidata:P175 .
+
+dbo:author owl:equivalentProperty wikidata:P50 .
+
+dbo:award owl:equivalentProperty wikidata:P166 .
+
+dbo:basedOn owl:equivalentProperty wikidata:P144 .
+
+dbo:battle owl:equivalentProperty wikidata:P607 .
+
+dbo:birthPlace owl:equivalentProperty wikidata:P19 .
+
+dbo:builder owl:equivalentProperty wikidata:P176 .
+
+dbo:capital owl:equivalentProperty wikidata:P36 .
+
+dbo:ceo owl:equivalentProperty wikidata:P169 .
+
+dbo:child owl:equivalentProperty wikidata:P40 .
+
+dbo:cinematography owl:equivalentProperty wikidata:P344 .
+
+dbo:citizenship owl:equivalentProperty wikidata:P27 .
+
+dbo:city owl:equivalentProperty wikidata:P131 .
+
+dbo:classis owl:equivalentProperty wikidata:P77 .
+
+dbo:coatOfArms owl:equivalentProperty wikidata:P94 .
+
+dbo:colour owl:equivalentProperty wikidata:P462 .
+
+dbo:composer owl:equivalentProperty wikidata:P86 .
+
+dbo:computingPlatform owl:equivalentProperty wikidata:P400 .
+
+dbo:constellation owl:equivalentProperty wikidata:P59 .
+
+dbo:constructionMaterial owl:equivalentProperty wikidata:P186 .
+
+dbo:continent owl:equivalentProperty wikidata:P30 .
+
+dbo:country owl:equivalentProperty wikidata:P17 .
+
+dbo:county owl:equivalentProperty wikidata:P131 .
+
+dbo:coverArtist owl:equivalentProperty wikidata:P736 .
+
+dbo:cpu owl:equivalentProperty wikidata:P880 .
+
+dbo:creator owl:equivalentProperty wikidata:P170 .
+
+dbo:crewMember owl:equivalentProperty wikidata:P1029 .
+
+dbo:crosses owl:equivalentProperty wikidata:P177 .
+
+dbo:currency owl:equivalentProperty wikidata:P38 .
+
+dbo:deathCause owl:equivalentProperty wikidata:P509 .
+
+dbo:deathPlace owl:equivalentProperty wikidata:P20 .
+
+dbo:designer owl:equivalentProperty wikidata:P287 .
+
+dbo:developer owl:equivalentProperty wikidata:P178 .
+
+dbo:diocese owl:equivalentProperty wikidata:P708 .
+
+dbo:director owl:equivalentProperty wikidata:P57 .
+
+dbo:discipline owl:equivalentProperty wikidata:P101 .
+
+dbo:discoverer owl:equivalentProperty wikidata:P61 .
+
+dbo:distributor owl:equivalentProperty wikidata:P750 .
+
+dbo:district owl:equivalentProperty wikidata:P131 .
+
+dbo:doctoralAdvisor owl:equivalentProperty wikidata:P184 .
+
+dbo:doctoralStudent owl:equivalentProperty wikidata:P185 .
+
+dbo:editing owl:equivalentProperty wikidata:P1040 .
+
+dbo:editor owl:equivalentProperty wikidata:P98 .
+
+dbo:education owl:equivalentProperty wikidata:P69 .
+
+dbo:employer owl:equivalentProperty wikidata:P108 .
+
+dbo:ethnicity owl:equivalentProperty wikidata:P172 .
+
+dbo:family owl:equivalentProperty wikidata:P71 .
+
+dbo:father owl:equivalentProperty wikidata:P22 .
+
+dbo:followedBy owl:equivalentProperty wikidata:P156 .
+
+dbo:follows owl:equivalentProperty wikidata:P155 .
+
+dbo:foundedBy owl:equivalentProperty wikidata:P112 .
+
+dbo:founder owl:equivalentProperty wikidata:P112 .
+
+dbo:fuelSystem owl:equivalentProperty wikidata:P1211 .
+
+dbo:gameEngine owl:equivalentProperty wikidata:P408 .
+
+dbo:generalManager owl:equivalentProperty wikidata:P505 .
+
+dbo:genre owl:equivalentProperty wikidata:P136 .
+
+dbo:genus owl:equivalentProperty wikidata:P74 .
+
+dbo:handedness owl:equivalentProperty wikidata:P552 .
+
+dbo:headquarter owl:equivalentProperty wikidata:P159 .
+
+dbo:highestPoint owl:equivalentProperty wikidata:P610 .
+
+dbo:highwaySystem owl:equivalentProperty wikidata:P16 .
+
+dbo:homeport owl:equivalentProperty wikidata:P504 .
+
+dbo:ideology owl:equivalentProperty wikidata:P1142 .
+
+dbo:illustrator owl:equivalentProperty wikidata:P110 .
+
+dbo:industry owl:equivalentProperty wikidata:P452 .
+
+dbo:inflow owl:equivalentProperty wikidata:P200 .
+
+dbo:instrument owl:equivalentProperty wikidata:P1303 .
+
+dbo:isPartOf owl:equivalentProperty wikidata:P361 .
+
+dbo:kingdom owl:equivalentProperty wikidata:P75 .
+
+dbo:launchSite owl:equivalentProperty wikidata:P448 .
+
+dbo:launchVehicle owl:equivalentProperty wikidata:P375 .
+
+dbo:league owl:equivalentProperty wikidata:P118 .
+
+dbo:license owl:equivalentProperty wikidata:P275 .
+
+dbo:locatedInArea owl:equivalentProperty wikidata:P131 .
+
+dbo:maintainedBy owl:equivalentProperty wikidata:P126 .
+
+dbo:manager owl:equivalentProperty wikidata:P286 .
+
+dbo:manufacturer owl:equivalentProperty wikidata:P176 .
+
+dbo:mother owl:equivalentProperty wikidata:P25 .
+
+dbo:movement owl:equivalentProperty wikidata:P135 .
+
+dbo:musicBy owl:equivalentProperty wikidata:P86 .
+
+dbo:musicalArtist owl:equivalentProperty wikidata:P175 .
+
+dbo:namedAfter owl:equivalentProperty wikidata:P138 .
+
+dbo:occupation owl:equivalentProperty wikidata:P106 .
+
+dbo:order owl:equivalentProperty wikidata:P70 .
+
+dbo:originalLanguage owl:equivalentProperty wikidata:P364 .
+
+dbo:owner owl:equivalentProperty wikidata:P127 .
+
+dbo:party owl:equivalentProperty wikidata:P102 .
+
+dbo:placeOfBurial owl:equivalentProperty wikidata:P119 .
+
+dbo:position owl:equivalentProperty wikidata:P413 .
+
+dbo:primeMinister owl:equivalentProperty wikidata:P6 .
+
+dbo:province owl:equivalentProperty wikidata:P131 .
+
+dbo:recordLabel owl:equivalentProperty wikidata:P264 .
+
+dbo:religion owl:equivalentProperty wikidata:P140 .
+
+dbo:residence owl:equivalentProperty wikidata:P263 .
+
+dbo:settlement owl:equivalentProperty wikidata:P131 .
+
+dbo:spouse owl:equivalentProperty wikidata:P26 .
+
+dbo:starring owl:equivalentProperty wikidata:P161 .
+
+dbo:taoiseach owl:equivalentProperty wikidata:P6 .
+
+dbo:team owl:equivalentProperty wikidata:P54 .
+
+dbo:terytCode owl:equivalentProperty wikidata:P1653 .
+

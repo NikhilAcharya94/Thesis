@@ -1,0 +1,675 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+
+wikidata:Q101600 a owl:Class .
+
+wikidata:Q1028181 a owl:Class .
+
+wikidata:Q1048525 a owl:Class .
+
+wikidata:Q10517054 a owl:Class .
+
+wikidata:Q1067263 a owl:Class .
+
+wikidata:Q10833314 a owl:Class .
+
+wikidata:Q10842936 a owl:Class .
+
+wikidata:Q10843402 a owl:Class .
+
+wikidata:Q10871364 a owl:Class .
+
+wikidata:Q1092563 a owl:Class .
+
+wikidata:Q10962 a owl:Class .
+
+wikidata:Q10978 a owl:Class .
+
+wikidata:Q11032 a owl:Class .
+
+wikidata:Q1107 a owl:Class .
+
+wikidata:Q1107656 a owl:Class .
+
+wikidata:Q11173 a owl:Class .
+
+wikidata:Q11190 a owl:Class .
+
+wikidata:Q11204 a owl:Class .
+
+wikidata:Q11266439 a owl:Class .
+
+wikidata:Q11303 a owl:Class .
+
+wikidata:Q11315 a owl:Class .
+
+wikidata:Q11410 a owl:Class .
+
+wikidata:Q11424 a owl:Class .
+
+wikidata:Q11436 a owl:Class .
+
+wikidata:Q11446 a owl:Class .
+
+wikidata:Q11514315 a owl:Class .
+
+wikidata:Q116 a owl:Class .
+
+wikidata:Q11631 a owl:Class .
+
+wikidata:Q11707 a owl:Class .
+
+wikidata:Q11774891 a owl:Class .
+
+wikidata:Q11862829 a owl:Class .
+
+wikidata:Q1198887 a owl:Class .
+
+wikidata:Q12136 a owl:Class .
+
+wikidata:Q121998 a owl:Class .
+
+wikidata:Q12280 a owl:Class .
+
+wikidata:Q12323 a owl:Class .
+
+wikidata:Q1248784 a owl:Class .
+
+wikidata:Q12516 a owl:Class .
+
+wikidata:Q12518 a owl:Class .
+
+wikidata:Q12973014 a owl:Class .
+
+wikidata:Q1298668 a owl:Class .
+
+wikidata:Q130003 a owl:Class .
+
+wikidata:Q1311958 a owl:Class .
+
+wikidata:Q131436 a owl:Class .
+
+wikidata:Q131512 a owl:Class .
+
+wikidata:Q13156709 a owl:Class .
+
+wikidata:Q132050 a owl:Class .
+
+wikidata:Q13219587 a owl:Class .
+
+wikidata:Q13219666 a owl:Class .
+
+wikidata:Q133056 a owl:Class .
+
+wikidata:Q133215 a owl:Class .
+
+wikidata:Q133492 a owl:Class .
+
+wikidata:Q13365117 a owl:Class .
+
+wikidata:Q13382519 a owl:Class .
+
+wikidata:Q13382576 a owl:Class .
+
+wikidata:Q13414980 a owl:Class .
+
+wikidata:Q13415036 a owl:Class .
+
+wikidata:Q13417114 a owl:Class .
+
+wikidata:Q1344 a owl:Class .
+
+wikidata:Q134447 a owl:Class .
+
+wikidata:Q134556 a owl:Class .
+
+wikidata:Q13474373 a owl:Class .
+
+wikidata:Q1348589 a owl:Class .
+
+wikidata:Q1350189 a owl:Class .
+
+wikidata:Q1353183 a owl:Class .
+
+wikidata:Q13561328 a owl:Class .
+
+wikidata:Q13590141 a owl:Class .
+
+wikidata:Q1370598 a owl:Class .
+
+wikidata:Q1390 a owl:Class .
+
+wikidata:Q14128148 a owl:Class .
+
+wikidata:Q141683 a owl:Class .
+
+wikidata:Q142714 a owl:Class .
+
+wikidata:Q14296 a owl:Class .
+
+wikidata:Q1444 a owl:Class .
+
+wikidata:Q1445650 a owl:Class .
+
+wikidata:Q14467526 a owl:Class .
+
+wikidata:Q146 a owl:Class .
+
+wikidata:Q14660 a owl:Class .
+
+wikidata:Q15061650 a owl:Class .
+
+wikidata:Q15091377 a owl:Class .
+
+wikidata:Q15117302 a owl:Class .
+
+wikidata:Q152 a owl:Class .
+
+wikidata:Q15265344 a owl:Class .
+
+wikidata:Q15410431 a owl:Class .
+
+wikidata:Q15416 a owl:Class .
+
+wikidata:Q1555508 a owl:Class .
+
+wikidata:Q156362 a owl:Class .
+
+wikidata:Q15854792 a owl:Class .
+
+wikidata:Q159719 a owl:Class .
+
+wikidata:Q15982795 a owl:Class .
+
+wikidata:Q161837 a owl:Class .
+
+wikidata:Q1620908 a owl:Class .
+
+wikidata:Q16266334 a owl:Class .
+
+wikidata:Q16278103 a owl:Class .
+
+wikidata:Q163740 a owl:Class .
+
+wikidata:Q16521 a owl:Class .
+
+wikidata:Q16533 a owl:Class .
+
+wikidata:Q1656682 a owl:Class .
+
+wikidata:Q166118 a owl:Class .
+
+wikidata:Q16917 a owl:Class .
+
+wikidata:Q16970 a owl:Class .
+
+wikidata:Q174782 a owl:Class .
+
+wikidata:Q17517 a owl:Class .
+
+wikidata:Q176799 a owl:Class .
+
+wikidata:Q177220 a owl:Class .
+
+wikidata:Q177380 a owl:Class .
+
+wikidata:Q1777138 a owl:Class .
+
+wikidata:Q178790 a owl:Class .
+
+wikidata:Q178885 a owl:Class .
+
+wikidata:Q18127 a owl:Class .
+
+wikidata:Q185187 a owl:Class .
+
+wikidata:Q188094 a owl:Class .
+
+wikidata:Q188451 a owl:Class .
+
+wikidata:Q190200 a owl:Class .
+
+wikidata:Q19088 a owl:Class .
+
+wikidata:Q1914636 a owl:Class .
+
+wikidata:Q1930187 a owl:Class .
+
+wikidata:Q194189 a owl:Class .
+
+wikidata:Q1949963 a owl:Class .
+
+wikidata:Q19546 a owl:Class .
+
+wikidata:Q1970725 a owl:Class .
+
+wikidata:Q19730508 a owl:Class .
+
+wikidata:Q2020153 a owl:Class .
+
+wikidata:Q202216 a owl:Class .
+
+wikidata:Q202444 a owl:Class .
+
+wikidata:Q206229 a owl:Class .
+
+wikidata:Q2095 a owl:Class .
+
+wikidata:Q212980 a owl:Class .
+
+wikidata:Q2133344 a owl:Class .
+
+wikidata:Q214917 a owl:Class .
+
+wikidata:Q215380 a owl:Class .
+
+wikidata:Q215627 a owl:Class .
+
+wikidata:Q2159907 a owl:Class .
+
+wikidata:Q216048 a owl:Class .
+
+wikidata:Q2188189 a owl:Class .
+
+wikidata:Q220505 a owl:Class .
+
+wikidata:Q225829 a owl:Class .
+
+wikidata:Q2334719 a owl:Class .
+
+wikidata:Q23397 a owl:Class .
+
+wikidata:Q23413 a owl:Class .
+
+wikidata:Q23442 a owl:Class .
+
+wikidata:Q234460 a owl:Class .
+
+wikidata:Q2354973 a owl:Class .
+
+wikidata:Q23691 a owl:Class .
+
+wikidata:Q2385804 a owl:Class .
+
+wikidata:Q24229398 a owl:Class .
+
+wikidata:Q24354 a owl:Class .
+
+wikidata:Q245068 a owl:Class .
+
+wikidata:Q2526255 a owl:Class .
+
+wikidata:Q25324 a owl:Class .
+
+wikidata:Q25326 a owl:Class .
+
+wikidata:Q25372 a owl:Class .
+
+wikidata:Q25379 a owl:Class .
+
+wikidata:Q2566598 a owl:Class .
+
+wikidata:Q25956 a owl:Class .
+
+wikidata:Q265868 a owl:Class .
+
+wikidata:Q267298 a owl:Class .
+
+wikidata:Q2722764 a owl:Class .
+
+wikidata:Q274153 a owl:Class .
+
+wikidata:Q2743 a owl:Class .
+
+wikidata:Q2761147 a owl:Class .
+
+wikidata:Q27686 a owl:Class .
+
+wikidata:Q282 a owl:Class .
+
+wikidata:Q28389 a owl:Class .
+
+wikidata:Q28640 a owl:Class .
+
+wikidata:Q2870166 a owl:Class .
+
+wikidata:Q30185 a owl:Class .
+
+wikidata:Q30461 a owl:Class .
+
+wikidata:Q3053337 a owl:Class .
+
+wikidata:Q3055126 a owl:Class .
+
+wikidata:Q315 a owl:Class .
+
+wikidata:Q3153117 a owl:Class .
+
+wikidata:Q318 a owl:Class .
+
+wikidata:Q3257686 a owl:Class .
+
+wikidata:Q327333 a owl:Class .
+
+wikidata:Q32815 a owl:Class .
+
+wikidata:Q3282637 a owl:Class .
+
+wikidata:Q33231 a owl:Class .
+
+wikidata:Q33506 a owl:Class .
+
+wikidata:Q33829 a owl:Class .
+
+wikidata:Q33837 a owl:Class .
+
+wikidata:Q3387717 a owl:Class .
+
+wikidata:Q33999 a owl:Class .
+
+wikidata:Q340169 a owl:Class .
+
+wikidata:Q34442 a owl:Class .
+
+wikidata:Q34493 a owl:Class .
+
+wikidata:Q3455524 a owl:Class .
+
+wikidata:Q34627 a owl:Class .
+
+wikidata:Q349 a owl:Class .
+
+wikidata:Q3501317 a owl:Class .
+
+wikidata:Q35509 a owl:Class .
+
+wikidata:Q35666 a owl:Class .
+
+wikidata:Q35749 a owl:Class .
+
+wikidata:Q36180 a owl:Class .
+
+wikidata:Q3621491 a owl:Class .
+
+wikidata:Q3665646 a owl:Class .
+
+wikidata:Q373085 a owl:Class .
+
+wikidata:Q378622 a owl:Class .
+
+wikidata:Q3863 a owl:Class .
+
+wikidata:Q386724 a owl:Class .
+
+wikidata:Q38720 a owl:Class .
+
+wikidata:Q3887 a owl:Class .
+
+wikidata:Q3914 a owl:Class .
+
+wikidata:Q3918 a owl:Class .
+
+wikidata:Q392928 a owl:Class .
+
+wikidata:Q3957 a owl:Class .
+
+wikidata:Q39614 a owl:Class .
+
+wikidata:Q39715 a owl:Class .
+
+wikidata:Q39816 a owl:Class .
+
+wikidata:Q39888 a owl:Class .
+
+wikidata:Q40218 a owl:Class .
+
+wikidata:Q4022 a owl:Class .
+
+wikidata:Q40231 a owl:Class .
+
+wikidata:Q40348 a owl:Class .
+
+wikidata:Q40357 a owl:Class .
+
+wikidata:Q41176 a owl:Class .
+
+wikidata:Q41253 a owl:Class .
+
+wikidata:Q41291 a owl:Class .
+
+wikidata:Q41298 a owl:Class .
+
+wikidata:Q41710 a owl:Class .
+
+wikidata:Q42178 a owl:Class .
+
+wikidata:Q422211 a owl:Class .
+
+wikidata:Q42603 a owl:Class .
+
+wikidata:Q4270517 a owl:Class .
+
+wikidata:Q42973 a owl:Class .
+
+wikidata:Q43115 a owl:Class .
+
+wikidata:Q43229 a owl:Class .
+
+wikidata:Q43501 a owl:Class .
+
+wikidata:Q44 a owl:Class .
+
+wikidata:Q44377 a owl:Class .
+
+wikidata:Q44494 a owl:Class .
+
+wikidata:Q44613 a owl:Class .
+
+wikidata:Q44782 a owl:Class .
+
+wikidata:Q4498974 a owl:Class .
+
+wikidata:Q4610556 a owl:Class .
+
+wikidata:Q467 a owl:Class .
+
+wikidata:Q46831 a owl:Class .
+
+wikidata:Q46970 a owl:Class .
+
+wikidata:Q473972 a owl:Class .
+
+wikidata:Q47521 a owl:Class .
+
+wikidata:Q476028 a owl:Class .
+
+wikidata:Q476300 a owl:Class .
+
+wikidata:Q482994 a owl:Class .
+
+wikidata:Q4830453 a owl:Class .
+
+wikidata:Q483501 a owl:Class .
+
+wikidata:Q484188 a owl:Class .
+
+wikidata:Q486839 a owl:Class .
+
+wikidata:Q486972 a owl:Class .
+
+wikidata:Q48806 a owl:Class .
+
+wikidata:Q488111 a owl:Class .
+
+wikidata:Q4886 a owl:Class .
+
+wikidata:Q4936952 a owl:Class .
+
+wikidata:Q495513 a owl:Class .
+
+wikidata:Q4964182 a owl:Class .
+
+wikidata:Q49757 a owl:Class .
+
+wikidata:Q4989906 a owl:Class .
+
+wikidata:Q5 a owl:Class .
+
+wikidata:Q500834 a owl:Class .
+
+wikidata:Q515 a owl:Class .
+
+wikidata:Q515716 a owl:Class .
+
+wikidata:Q5185279 a owl:Class .
+
+wikidata:Q524572 a owl:Class .
+
+wikidata:Q532 a owl:Class .
+
+wikidata:Q55488 a owl:Class .
+
+wikidata:Q562214 a owl:Class .
+
+wikidata:Q571 a owl:Class .
+
+wikidata:Q577 a owl:Class .
+
+wikidata:Q613142 a owl:Class .
+
+wikidata:Q618779 a owl:Class .
+
+wikidata:Q623109 a owl:Class .
+
+wikidata:Q6256 a owl:Class .
+
+wikidata:Q627603 a owl:Class .
+
+wikidata:Q628099 a owl:Class .
+
+wikidata:Q634 a owl:Class .
+
+wikidata:Q6545185 a owl:Class .
+
+wikidata:Q6607 a owl:Class .
+
+wikidata:Q6631808 a owl:Class .
+
+wikidata:Q683267 a owl:Class .
+
+wikidata:Q697295 a owl:Class .
+
+wikidata:Q7075 a owl:Class .
+
+wikidata:Q7187 a owl:Class .
+
+wikidata:Q7191 a owl:Class .
+
+wikidata:Q719456 a owl:Class .
+
+wikidata:Q7257 a owl:Class .
+
+wikidata:Q7275 a owl:Class .
+
+wikidata:Q7278 a owl:Class .
+
+wikidata:Q728 a owl:Class .
+
+wikidata:Q728937 a owl:Class .
+
+wikidata:Q729 a owl:Class .
+
+wikidata:Q7365 a owl:Class .
+
+wikidata:Q737498 a owl:Class .
+
+wikidata:Q737498Q13381863 a owl:Class .
+
+wikidata:Q7377 a owl:Class .
+
+wikidata:Q7397 a owl:Class .
+
+wikidata:Q747381 a owl:Class .
+
+wikidata:Q753110 a owl:Class .
+
+wikidata:Q754669 a owl:Class .
+
+wikidata:Q756 a owl:Class .
+
+wikidata:Q7889 a owl:Class .
+
+wikidata:Q79007 a owl:Class .
+
+wikidata:Q7946 a owl:Class .
+
+wikidata:Q8047 a owl:Class .
+
+wikidata:Q8054 a owl:Class .
+
+wikidata:Q8072 a owl:Class .
+
+wikidata:Q81096 a owl:Class .
+
+wikidata:Q8161 a owl:Class .
+
+wikidata:Q8261 a owl:Class .
+
+wikidata:Q8274 a owl:Class .
+
+wikidata:Q82799 a owl:Class .
+
+wikidata:Q82955 a owl:Class .
+
+wikidata:Q83405 a owl:Class .
+
+wikidata:Q8366 a owl:Class .
+
+wikidata:Q8386 a owl:Class .
+
+wikidata:Q842606 a owl:Class .
+
+wikidata:Q8436 a owl:Class .
+
+wikidata:Q8441 a owl:Class .
+
+wikidata:Q847400 a owl:Class .
+
+wikidata:Q8502 a owl:Class .
+
+wikidata:Q855091 a owl:Class .
+
+wikidata:Q868557 a owl:Class .
+
+wikidata:Q870 a owl:Class .
+
+wikidata:Q8928 a owl:Class .
+
+wikidata:Q901 a owl:Class .
+
+wikidata:Q9143 a owl:Class .
+
+wikidata:Q9259 a owl:Class .
+
+wikidata:Q928830 a owl:Class .
+
+wikidata:Q930752 a owl:Class .
+
+wikidata:Q93301 a owl:Class .
+
+wikidata:Q937857 a owl:Class .
+
+wikidata:Q9430 a owl:Class .
+
+wikidata:Q947873 a owl:Class .
+
+wikidata:Q95074 a owl:Class .
+
+wikidata:Q9609 a owl:Class .
+
+wikidata:Q9620 a owl:Class .
+
+wikidata:Q9655 a owl:Class .
+
+wikidata:Q9788 a owl:Class .
+

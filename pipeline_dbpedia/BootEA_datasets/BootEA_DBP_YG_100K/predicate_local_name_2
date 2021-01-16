@@ -1,0 +1,64 @@
+hasCurrency	currency
+hasExpenses	expenses
+skos:prefLabel	pref label
+wasBornOnDate	born date
+isMarriedTo	married to
+edited	edited
+hasInflation	inflation
+happenedOnDate	happened date
+influences	influences
+hasNeighbor	neighbor
+hasArea	area
+actedIn	acted in
+isKnownFor	known for
+isConnectedTo	connected to
+rdfs:label	label
+worksAt	works at
+hasImdb	imdb
+hasMotto	motto
+hasExport	export
+wasDestroyedOnDate	destroyed date
+happenedIn	happened in
+hasAcademicAdvisor	academic advisor
+graduatedFrom	graduated from
+hasHeight	height
+hasImport	import
+wasCreatedOnDate	created date
+created	created
+hasPopulationDensity	population density
+hasLength	length
+playsFor	plays for
+hasPoverty	poverty
+hasGini	gini
+hasAirportCode	airport code
+isLocatedIn	located in
+diedIn	died in
+hasWonPrize	won prize
+diedOnDate	died date
+isLeaderOf	leader of
+owns	owns
+hasUnemployment	unemployment
+redirectedFrom	redirected from
+isPoliticianOf	politician of
+hasLongitude	long
+dealsWith	deals with
+hasChild	child
+wasBornIn	born in
+isAffiliatedTo	affiliated to
+hasTLD	TLD
+hasPages	pages
+hasCapital	capital
+livesIn	lives in
+isInterestedIn	interested in
+hasWeight	weight
+hasNumberOfPeople	number of people
+hasRevenue	revenue
+hasLatitude	lat
+isCitizenOf	citizen of
+wroteMusicFor	wrote music for
+hasBudget	budget
+directed	directed
+hasGDP	GDP
+hasEconomicGrowth	economic growth
+hasDuration	duration
+participatedIn	participated in

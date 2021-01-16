@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jan  7 21:23:51 2021
+
+@author: nacharya
+"""
+
+from SPARQLWrapper import SPARQLWrapper, N3
+from rdflib import Graph
+import multiprocessing
+from joblib import Parallel, delayed
+from tqdm import tqdm
+import urllib
+
+
+def write_to_ttl(entity):
+    
+    try:
+        
+        #sparql.setQuery("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   CONSTRUCT { <"+entity+"> rdf:type ?type } WHERE { <"+entity+"> rdf:type ?type . FILTER(STRSTARTS(STR(?var), "http://example.org/ns#"))} ")
+        sparql.setQuery("""PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   
+                        CONSTRUCT { <http://dbpedia.org/resource/Innsbruck> rdf:type ?type } 
+                        WHERE { <http://dbpedia.org/resource/Innsbruck> rdf:type ?type .
+                               FILTER(REGEX(STR(?type), 'http://dbpedia\\.org/ontology/'))}
+                         """)
+        sparql.setReturnFormat(N3)
+        results = sparql.query().convert()
+        results=str(results,"utf-8")
+        g.parse(data=results, format="n3")
+    except urllib.error.URLError:
+        print("Some other error happened")
+        
+
+def write_to_ttl_loop(entity):
+     sparql.setQuery("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   CONSTRUCT { <"+entity+"> rdf:type ?type } WHERE { <"+entity+"> rdf:type ?type .} ")
+     sparql.setReturnFormat(N3)
+     results = sparql.query().convert()
+     results=str(results,"utf-8")
+     g.parse(data=results, format="n3")
+
+
+with open("entity_local_name_1.txt", "r") as f:
+    entity = f.readlines()
+entity = [x.split("\t")[0] for x in entity] 
+entity=entity[:1000]
+sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+g = Graph()
+num_cores = multiprocessing.cpu_count()
+inputs = tqdm(entity)
+"""for i in entity:
+    write_to_ttl_loop(i)"""
+Parallel(n_jobs=num_cores)(delayed(write_to_ttl)(i) for i in inputs)
+
+#g.serialize(destination="test_entities.ttl",format='n3')
+#n = text_file.write(a)
+
+
+
+
